@@ -46,11 +46,11 @@
   font-size: 3.5rem;
   transition: .5s ease-in-out;
 }
-.circle:hover {
+/* .circle:hover {
   color: darkgray;
   transform: scale(0.95);
   transition: .5s ease-in-out;
-}
+} */
 .icons:hover {
   transform: scale(0.95);
   transition: .5s ease-in-out;
