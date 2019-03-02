@@ -1,0 +1,90 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.section {
+  min-height: 100vh;
+}
+
+/* ---------- Home ------------ */
+
+#video-background {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  margin: 10px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 25vh;
+}
+.falcon-logo {
+  width: 40%;
+  margin: auto;
+}
+.falcon-text {
+  width: 40%;
+  margin: auto;
+  margin-top: 1%;
+}
+.red {
+  color: #C0182A;
+}
+.red:hover {
+  color: #1E191A;
+  transition: 1s ease;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.icons {
+  display: block;
+  position: relative;
+  flex-direction: row;
+  margin-left: 70px;
+  font-size: 2.5rem;
+}
+.no-margin-left {
+  margin-left: 0 !important;
+}
+
+/* ---------- Media Queries ------------ */
+
+/* Galaxy */
+@media screen and (max-width: 600px) {
+  .falcon-logo { width: 90%; }
+  .falcon-text { width: 90%; }
+  /* Social Icons */
+  .icons { margin-left: 25px; font-size: 2rem; } 
+  .no-margin-left { margin-left: -4vw !important; }
+  /* Circles */
+  .circles-container { flex-direction: column; margin: 0 auto; margin-top: 3%;}
+  .big-circle { height: 10rem; width: 10rem;}
+  .left-circle { margin-bottom: 5%;}
+  .center-circle { margin-bottom: 5%;}
+  .circle-text { font-size: 0.8rem; line-height: 1rem; }
+  #circle-text-extra { transform: translate(-50%, 100%); }
+}
