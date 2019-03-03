@@ -7,9 +7,57 @@
 .section {
   min-height: 100vh;
 }
-
+a {
+  text-decoration: none;
+}
 /* ---------- Home ------------ */
 
+/* Navigation */
+.nav {
+  position: relative;
+  top: 20px;
+}
+.nav-expand {
+  display: none;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+.nav-items li {
+  text-transform: uppercase;
+  font-family: 'Segoe UI', sans-serif;
+  margin-left: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+.nav a {
+  color: white;
+  padding: 10px 14px;
+  background-color: rgba(0,0,0,.5);
+}
+.nav a:hover {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #fbfbfb;
+}
+.no-margin-left-list {
+  margin-left: -20px !important;
+}
+.nav-items li:hover {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #fbfbfb;
+}
+.nav-items li:active {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #fbfbfb;
+}
+#menu-bars {
+  display: none;
+}
+
+/* Video Background */
 #video-background {
   position: fixed;
   right: 0; 
@@ -18,24 +66,34 @@
   min-height: 100%;
   width: auto; 
   height: auto;
-  z-index: -100;
+  z-index: -2;
 }
-
+.video-overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
 article {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  border: 10px solid rgba(255, 255, 255, 0.5);
+  border: 10px solid rgba(255, 255, 255, 0.85);
   margin: 10px;
 }
+
+/* Falcon Logo */
 .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 25vh;
+  margin-top: 20vh;
 }
 .falcon-logo {
   width: 40%;
@@ -46,19 +104,13 @@ article {
   margin: auto;
   margin-top: 1%;
 }
-.red {
-  color: #C0182A;
-}
-.red:hover {
-  color: #1E191A;
-  transition: 1s ease;
-}
 
 /* Social Icons */
 .social-icons {
   display: flex;
   position: relative;
   justify-content: center;
+  top: 0;
 }
 .icons {
   display: block;
@@ -70,21 +122,83 @@ article {
 .no-margin-left {
   margin-left: 0 !important;
 }
+.red {
+  color: #C0182A;
+}
+.red:hover {
+  color: rgb(224, 224, 224);
+}
 
 /* ---------- Media Queries ------------ */
 
 /* Galaxy */
 @media screen and (max-width: 600px) {
+  /* Navigation */
+  #menu-bars { display: initial; }
+  .no-margin-left-list { margin-left: 10px !important; }
+  .nav { 
+    top: -300px; 
+    left: -15px; 
+    width: 100%; 
+    transition: 0.75s ease; 
+  }
+  .nav-expand { 
+    top: 40px !important; 
+    display: initial; 
+    transition: 0.3s ease; 
+  }
+  .nav-items { 
+    flex-direction: column; 
+    margin-left: -20px; 
+    margin-top: -25px; 
+    text-align: center;
+  }
+  .nav-items li {
+    padding: 10px 14px;
+    background-color: rgba(0,0,0,.5);
+  }
+  .nav a {
+    padding: 0;
+    background-color: rgba(0,0,0,0);
+  }
+
+  /* Hamburger Menu */
+  .menu-container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 12;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(224, 224, 224);
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 30;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  /* Falcon Logo */
+  .logo { margin-top: 12vh; }
   .falcon-logo { width: 90%; }
-  .falcon-text { width: 90%; }
+  .falcon-text { width: 90%; margin-top: 2%; }
+  article { margin: 15px; border-width: 5px; }
+  
   /* Social Icons */
+  .social-icons { top: -10px}
   .icons { margin-left: 25px; font-size: 2rem; } 
   .no-margin-left { margin-left: -4vw !important; }
-  /* Circles */
-  .circles-container { flex-direction: column; margin: 0 auto; margin-top: 3%;}
-  .big-circle { height: 10rem; width: 10rem;}
-  .left-circle { margin-bottom: 5%;}
-  .center-circle { margin-bottom: 5%;}
-  .circle-text { font-size: 0.8rem; line-height: 1rem; }
-  #circle-text-extra { transform: translate(-50%, 100%); }
 }
