@@ -12,12 +12,4 @@ export class BeerComponent implements OnInit {
   ngOnInit() {
   }
 
-  ToggleBeer() {
-    if (window.innerWidth < 600) {
-      var x = document.getElementById("nav-beer");
-      var y = document.getElementById("menu-bars-beer");
-      x.classList.toggle("nav-expand");
-      y.classList.toggle("change");
-    }
-  }
 }
