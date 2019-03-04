@@ -12,12 +12,4 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
-  ToggleContact() {
-    if (window.innerWidth < 600) {
-      var x = document.getElementById("nav-contact");
-      var y = document.getElementById("menu-bars-contact");
-      x.classList.toggle("nav-expand");
-      y.classList.toggle("change");
-    }
-  }
 }

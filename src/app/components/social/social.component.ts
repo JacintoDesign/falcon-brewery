@@ -12,13 +12,4 @@ export class SocialComponent implements OnInit {
   ngOnInit() {
   }
 
-  ToggleSocial() {
-    if (window.innerWidth < 600) {
-      var x = document.getElementById("nav-social");
-      var y = document.getElementById("menu-bars-social");
-      x.classList.toggle("nav-expand");
-      y.classList.toggle("change");
-    }
-  }
-
 }

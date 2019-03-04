@@ -12,12 +12,4 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
-  ToggleAbout() {
-    if (window.innerWidth < 600) {
-      var x = document.getElementById("nav-about");
-      var y = document.getElementById("menu-bars-about");
-      x.classList.toggle("nav-expand");
-      y.classList.toggle("change");
-    }
-  }
 }
