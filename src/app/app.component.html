@@ -9,13 +9,15 @@
     </div>
     <nav class="nav" id="nav">
       <ul class="nav-items" (click)="Toggle()">
-        <li class="no-margin-left-list"><a href="#">Our Story</a></li>
-        <li><a href="#">Our Beer</a></li>
-        <li><a href="#">On Tap</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="no-margin-left-list"><a routerLink="/about" routerLinkActive="active">Our Story</a></li>
+        <li><a routerLink="/beer" routerLinkActive="active">Our Beer</a></li>
+        <li><a routerLink="/social" routerLinkActive="active">On Tap</a></li>
+        <li><a routerLink="/events" routerLinkActive="active">Events</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
       </ul>
     </nav>
+
+    <router-outlet></router-outlet>
 
     <!-- Video Background -->
     <article></article>

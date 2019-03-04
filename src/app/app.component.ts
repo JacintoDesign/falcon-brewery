@@ -9,10 +9,12 @@ export class AppComponent {
   title = 'falcon-brewery-pwa';
 
   Toggle() {
-    var x = document.getElementById("nav");
-    var y = document.getElementById("menu-bars");
-    x.classList.toggle("nav-expand");
-    y.classList.toggle("change");
+    if (window.innerWidth < 600) {
+      var x = document.getElementById("nav");
+      var y = document.getElementById("menu-bars");
+      x.classList.toggle("nav-expand");
+      y.classList.toggle("change");
+    }
   }
 }
 

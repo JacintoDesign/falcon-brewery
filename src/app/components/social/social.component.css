@@ -1,13 +1,14 @@
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+.social-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(98, 158, 86);
+  z-index: 2000;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
-.section {
-  min-height: 100vh;
-}
-/* ---------- Home ------------ */
 
 /* Navigation */
 a {
@@ -15,7 +16,7 @@ a {
 }
 .nav {
   position: relative;
-  top: 20px;
+  top: 28px;
 }
 .nav-expand {
   display: none;
@@ -55,78 +56,6 @@ a {
 }
 #menu-bars {
   display: none;
-}
-
-/* Video Background */
-#video-background {
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -2;
-}
-.video-overlay {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,.5);
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-article {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 10px solid rgba(255, 255, 255, 0.85);
-  margin: 10px;
-}
-
-/* Falcon Logo */
-.logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin-top: 20vh;
-}
-.falcon-logo {
-  width: 40%;
-  margin: auto;
-}
-.falcon-text {
-  width: 40%;
-  margin: auto;
-  margin-top: 1%;
-}
-
-/* Social Icons */
-.social-icons {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  top: 0;
-}
-.icons {
-  display: block;
-  position: relative;
-  flex-direction: row;
-  margin-left: 70px;
-  font-size: 2.5rem;
-}
-.no-margin-left {
-  margin-left: 0 !important;
-}
-.red {
-  color: #C0182A;
-}
-.red:hover {
-  color: rgb(224, 224, 224);
 }
 
 /* ---------- Media Queries ------------ */
@@ -190,15 +119,4 @@ article {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
-
-  /* Falcon Logo */
-  .logo { margin-top: 12vh; }
-  .falcon-logo { width: 90%; }
-  .falcon-text { width: 90%; margin-top: 2%; }
-  article { margin: 15px; border-width: 5px; }
-
-  /* Social Icons */
-  .social-icons { top: -10px}
-  .icons { margin-left: 25px; font-size: 2rem; } 
-  .no-margin-left { margin-left: -4vw !important; }
 }
