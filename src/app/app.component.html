@@ -2,27 +2,11 @@
   <app-nav-menu></app-nav-menu>
   <section id="home">
 
-    <!-- Navigation -->
-    <!-- <div class="menu-container" id="menu-bars" (click)="Toggle()">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    <nav class="nav" id="nav">
-      <ul class="nav-items" (click)="Toggle()">
-        <li class="no-margin-left-list"><a routerLink="/about" routerLinkActive="active">Our Story</a></li>
-        <li><a routerLink="/beer" routerLinkActive="active">Our Beer</a></li>
-        <li><a routerLink="/social" routerLinkActive="active">On Tap</a></li>
-        <li><a routerLink="/events" routerLinkActive="active">Events</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-      </ul>
-    </nav> -->
-
     <router-outlet></router-outlet>
 
     <!-- Video Background -->
     <article></article>
-      <video playsinline autoplay muted loop id="video-background">
+      <video loop muted autoplay id="video-background">
         <source src="../assets/img/drinks.mp4" type="video/mp4" />
       </video>
       <div class="video-overlay"></div>
