@@ -46,26 +46,6 @@ a {
   display: none;
 }
 
-/* Frame */
-.video-overlay {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,.5);
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-article {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 10px solid rgba(255, 255, 255, 0.85);
-  margin: 10px;
-}
-
 /* ---------- Media Queries ------------ */
 
 /* Galaxy */
@@ -111,7 +91,7 @@ article {
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: rgb(224, 224, 224);
+    background-color: rgba(255, 255, 255, 0.85);
     margin: 6px 0;
     transition: 0.4s;
     z-index: 30;

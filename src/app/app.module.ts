@@ -15,7 +15,9 @@ import { BeerComponent } from './components/beer/beer.component';
 import { SocialComponent } from './components/social/social.component';
 import { EventsComponent } from './components/events/events.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { HomeComponent } from './components/home/home.component';
+
+import { NavMenuComponent } from './shared/components/nav-menu/nav-menu.component';
 
 library.add(faInstagram, faTwitter, faFacebookF);
 
@@ -35,6 +37,7 @@ const appRoutes: Routes = [
     SocialComponent,
     EventsComponent,
     ContactComponent,
+    HomeComponent,
     NavMenuComponent
   ],
   imports: [

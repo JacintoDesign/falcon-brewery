@@ -1,40 +1,4 @@
-<div class="wrapper">
-  <app-nav-menu></app-nav-menu>
-  <section id="home">
 
-    <router-outlet></router-outlet>
-
-    <!-- Video Background -->
-    <article></article>
-      <video loop muted autoplay id="video-background">
-        <source src="../assets/img/drinks.mp4" type="video/mp4" />
-      </video>
-      <div class="video-overlay"></div>
-
-    <!-- Falcon Logo -->
-    <div class="logo">
-      <img src="../assets/img/falcon-logo.png" alt="Falcon Brewery Logo" class="falcon-logo">
-      <img src="../assets/img/falcon-text.png" alt="Falcon Brewery" class="falcon-text">
-    </div>
-
-    <!-- Social Icons -->
-    <ul class="social-icons">
-      <li class="icons no-margin-left">
-        <a href="https://instagram.com/falconbrewing/" target="_blank" rel="noopener" title="Instagram">
-          <fa-icon [icon]="['fab', 'instagram']" class="red"></fa-icon>
-        </a>
-      </li>
-      <li class="icons">
-        <a href="https://www.facebook.com/falconbrewingco/" target="_blank" rel="noopener" title="Facebook">
-          <fa-icon [icon]="['fab', 'facebook-f']" class="red"></fa-icon>
-        </a>
-      </li>
-      <li class="icons">
-        <a href="https://twitter.com/falconbrewingco/" target="_blank" rel="noopener" title="Twitter">
-          <fa-icon [icon]="['fab', 'twitter']" class="red"></fa-icon>
-        </a>
-      </li>
-    </ul>
-
-  </section>
-</div>
+<app-nav-menu></app-nav-menu>
+<app-home></app-home>
+<router-outlet></router-outlet>
