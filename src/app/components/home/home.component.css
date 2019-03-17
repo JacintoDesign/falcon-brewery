@@ -90,6 +90,29 @@ article {
 
 /* ---------- Media Queries ------------ */
 
+/* iPad - Horizontal */
+@media screen and (max-width: 1025px) {
+  /* Falcon Logo */
+  .logo { margin-top: -7vh; }
+  .falcon-logo { width: 80%; }
+  .falcon-text { width: 80%; margin-top: 1%; }
+
+  /* Social Icons */
+  .social-icons { top: -5px}
+  .icons { margin-left: 70px; font-size: 3rem; } 
+  .no-margin-left { margin-left: 1vw !important; }
+}
+
+/* iPad - Vertical */
+@media screen and (max-width: 769px) {
+  /* Falcon Logo */
+  .logo { margin-top: 10vh; }
+  .falcon-text { width: 80%; margin-top: 2%; }
+
+  /* Social Icons */
+  .icons { margin-left: 55px; font-size: 2.75rem; } 
+}
+
 /* Galaxy */
 @media screen and (max-width: 600px) {
   /* Falcon Logo */
@@ -102,4 +125,9 @@ article {
   .social-icons { top: -10px}
   .icons { margin-left: 25px; font-size: 2rem; } 
   .no-margin-left { margin-left: -4vw !important; }
+}
+
+/* iPhone 6/7/8 */
+@media screen and (max-width: 376px) and (max-height: 668px) {
+  .logo { margin-top: 0vh; }
 }
