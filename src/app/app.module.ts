@@ -38,7 +38,7 @@ const appRoutes: Routes = [
     EventsComponent,
     ContactComponent,
     HomeComponent,
-    NavMenuComponent
+    NavMenuComponent, 
   ],
   imports: [
     RouterModule.forRoot(

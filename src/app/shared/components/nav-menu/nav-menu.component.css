@@ -83,7 +83,7 @@ a {
   .menu-container {
     display: inline-block;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 25px;
     left: 30px;
     z-index: 12;
