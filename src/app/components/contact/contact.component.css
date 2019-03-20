@@ -4,7 +4,113 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(185, 207, 58);
+  background-color: rgb(66, 43, 43);
   overflow-y: auto;
   scroll-behavior: smooth;
+}
+
+/* Standard */
+section {
+  margin-top: 50px;
+}
+
+h1 {
+  top: -10px;
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.content-group {
+  display: flex;
+}
+
+.main {
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  width: 15vw;
+  padding: 25px;
+  margin-top: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-img {
+  display: initial;
+}
+
+.mobile-img { 
+  display: none;
+}
+
+img {
+  height: 80vh;
+  margin-top: 10px;
+}
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* min-height: 100vh; */
+  /* height: fit-content; */
+  height: auto;
+  padding: 20px;
+  border: 10px solid white;
+  margin: 10px;
+}
+
+/* ---------- Media Queries ------------ */
+
+/* iPad - Horizontal */
+@media screen and (max-width: 1025px) {
+  section { margin-top: 30px; }
+  h1 { top: 1px; left: 80px; }
+  img { width: 100%; height: auto; }
+}
+
+/* iPad */
+@media screen and (max-width: 769px) {
+
+}
+
+/* Galaxy */
+@media screen and (max-width: 600px) {
+  section { margin-top: 30px; }
+  h1 { top: -20px; left: 55px; }
+  .content-group { display: block; }
+  .main { width: 81.5%; margin-top: 10px; font-size: 1rem; padding: 25px 25px 25px 40px; }
+  .mobile-margin-bottom { margin-bottom: 0; }
+  .desktop-img { display: none; }
+  .mobile-img { display: initial; }
+  img { width: 100%; height: auto; }
+  article { 
+    margin: 15px; 
+    padding: 10px; 
+    border: 5px solid rgba(255, 255, 255, 0.85); 
+    min-height: 100vh;
+    height: fit-content;
+  }
+}
+
+/* Galaxy - Horizontal */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+
+}
+
+/* iPhone 6/7/8 */
+@media screen and (max-width: 376px) and (max-height: 668px) {
+
+}
+
+/* iPhone 6/7/8 - Horizontal */
+@media screen and (max-width: 668px) and (max-height: 376px) {
+
 }
