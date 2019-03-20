@@ -1,22 +1,226 @@
 <div class="beer-wrapper">
   
   <article>
-    <h1>Our Beer</h1>
+    <h1 class="page-title">Our Beer</h1>
+    <h1 class="page-title right" (click)="showCard9()">Where On Tap</h1>
     <section>
       <div class="content-group">
-        <img class="mobile-img" src="../../../assets/img/falcon-brewing-1.jpg" alt="">
-        <p class="main">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum reiciendis atque porro recusandae sint vitae quod minima qui ducimus, aut, architecto laudantium sapiente, ullam voluptates amet assumenda expedita fugiat illo!
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto maiores dicta labore quidem sunt earum error quod amet eum reprehenderit ad eaque perferendis, tempora nemo, quibusdam culpa. Non, modi.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt natus, amet consectetur perferendis itaque nesciunt laborum, quos dolorem magnam quia explicabo corporis at ex? Ducimus repellat voluptatibus consequatur obcaecati!
-        </p>
-        <img class="mobile-img" style="margin-top: 0;" src="../../../assets/img/falcon-brewing-44.jpg" alt="">
-        <p class="main mobile-margin-bottom">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor, temporibus, neque veritatis reprehenderit et perspiciatis voluptas porro natus iusto dicta! Sequi eius aperiam quo ad rem eligendi! Reprehenderit, iusto.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores, ea eveniet sunt minima molestias deserunt facere dignissimos aliquam! Sed odit dolore aspernatur! Necessitatibus reiciendis, odio inventore vero pariatur beatae?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem aperiam praesentium magnam aliquid ex temporibus eius consequuntur perferendis dolorum sapiente nobis, quis repellat officia at, excepturi, id distinctio dolore.
-        </p>
-        <img class="desktop-img" src="../../../assets/img/falcon-brewing-1.jpg" alt="">
+        <!-- Beer Titles -->
+        <div class="beer-list">
+          <h1 class="beer-title" (click)="showCard1()">Red Falcon Ale</h1>
+          <h1 class="beer-title" (click)="showCard2()">Laggar Falcon Craft Lager</h1>
+          <h1 class="beer-title" (click)="showCard3()">Bomb Girls Blond Ale</h1>
+          <h1 class="beer-title" (click)="showCard4()">Munition IPA</h1>
+          <h1 class="beer-title" (click)="showCard5()">Kent's Best Bitter</h1>
+          <h1 class="beer-title" (click)="showCard6()">Salem Stout</h1>
+          <h1 class="beer-title" (click)="showCard7()">Ginger Haze</h1>
+          <h1 class="beer-title" (click)="showCard8()">Light Cruiser English Mild</h1>
+        </div>
+        <!-- Falcon Ale -->
+        <div class="image-group" id="card-1">
+          <div class="beer-image">
+            <img src="../../../assets/img/labels/falcon-ale.jpg" alt="">
+          </div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Red Falcon Ale
+              </span><br><br>
+              An Irish-style red ale, full bodied with a slightly sweet and malty opening, mild hop nose and bitterness, and a long roasted finish. The complex malt profile comes from having five grains, including CaraMunich and Roasted Barley. Winner of numerous beer festival awards.
+              <br><br>
+              <span class="beer-caption">
+                ABV 5.0% IBU 16
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Falcon Lager -->
+        <div class="image-group no-show" id="card-2">
+          <div class="beer-image">
+            <img src="../../../assets/img/labels/falcon-lager.jpg" alt="">
+          </div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Laggar Falcon Craft Lager 
+              </span><br><br>
+              A Bavarian Helles lager, more full-bodied than a pilsner because of the addition of Munich Malt. Crisp and refreshing, with moderate bitterness from Centennial, Cascade and Hallartau hops. A beautiful and easy-drinking beer. Bronze medal winner in the Ontario Brewing Awards for lagers.
+              <br><br>
+              <span class="beer-caption">
+                ABV 5.0% IBU 42
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Bomb Girls -->
+        <div class="image-group no-show" id="card-3">
+          <div class="beer-image">
+            <img src="../../../assets/img/labels/falcon-bomb-girls.jpg" alt="">
+          </div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Bomb Girls Blond Ale 
+              </span><br><br>
+              Along with Munition IPA, this beer is Falcon’s tribute to the history of Ajax which was the largest munitions manufacturing site in Canada during WWII, and the home of the “Bomb Girl”. This is a North American style blond ale, light pale gold colour, crisp and spicy taste, and a honey-like aroma.
+              <br><br>
+              <span class="beer-caption">
+                ABV 4.6% IBU 30
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Munition IPA -->
+        <div class="image-group no-show" id="card-4">
+          <div class="beer-image">
+            <img src="../../../assets/img/labels/falcon-munition.jpg" alt="">
+          </div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Munition IPA 
+              </span><br><br>
+              Munition India Pale Ale has a complex malt nose and taste, very full-bodied, and a citrus hop aroma and flavour that comes from Citra, Columbus and Cascade hops. It is golden in colour, and its smooth taste belies the high IBU of 72.
+              <br><br>
+              <span class="beer-caption">
+                ABV 6.6% IBU 72
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Kent's Bitter -->
+        <div class="image-group no-show" id="card-5">
+          <div class="beer-image">
+            <img src="../../../assets/img/labels/falcon-kent-bitter.jpg" alt="">
+          </div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Kent's Best Bitter 
+              </span><br><br>
+              An extra special bitter pale ale, rich and full-bodied made from traditional English ingredients, including five types of malt, and East Kent Golding and Fuggles hops. This is an easy drinking pale ale – the original session ale.
+              <br><br>
+              <span class="beer-caption">
+                ABV 5.6% IBU 40
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Salem Stout -->
+        <div class="image-group no-show" id="card-6">
+          <div class="beer-image">
+            <img src="../../../assets/img/labels/falcon-salem-stout.jpg" alt="">
+          </div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Salem Stout 
+              </span><br><br>
+              An American-style stout, slightly sweeter than a dry Irish stout. Black, opaque colour with a foamy tan head. Full bodied because of the higher alcohol content, rich in mouth feel, with a long finish. Toasty flavour from the Black Malt, and a mild bitterness from Warrior and Cascade hops.
+              <br><br>
+              <span class="beer-caption">
+                ABV 6.5% IBU 45
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Ginger Haze -->
+        <div class="image-group no-show" id="card-7">
+          <div class="beer-image">
+            <img src="../../../assets/img/labels/falcon-ginger-haze.jpg" alt="">
+          </div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Ginger Haze
+              </span><br><br>
+              This ale starts out as a pale ale but has a full 10 kg of fresh ginger added to it. The ginger is not subtle but it is also not overpowering. The beer is well balanced with a crisp malt and slightly citrusy hop background.  
+              <br><br>
+              <span class="beer-caption">
+                ABV 5.6% IBU 35
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Light Cruiser English Mild -->
+        <div class="image-group no-show" id="card-8">
+          <div class="beer-image">
+            <img src="../../../assets/img/labels/falcon-ale.jpg" alt="">
+          </div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Light Cruiser English Mild
+              </span><br><br>
+              Mild ale originally meant a young ale and is now more often interpreted as being mildly hopped. The style of beer originated in Britain in the 17th century or earlier, and has a predominantly malty palate. Modern mile ales are mainly dark-coloured with an ABV of 3% to 3.6%, although there are lighter-hued examples as well as stronger examples reaching 6% ABV and higher. 
+              <br><br>
+              <span class="beer-caption">
+                ABV 4.3% IBU 17
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Where on Tap -->
+        <div class="image-group no-show" id="card-9">
+          <div>
+            <img class="image" src="../../../assets/img/falcon-brewing-42.jpg" alt="">
+          </div>
+          <div class="tap-info">
+            <div class="column-1">
+                <p class="main main-column-1">
+                  <span class="beer-subtitle">
+                    Pickering
+                  </span><br>
+                  Chuuk<br>
+                  Waterfront<br>
+                  Fox Goes Free<br>
+                  Pickle Barrel<br>
+                  Cineplex VIP
+                  <br><br>
+                  <span class="beer-subtitle">
+                    Ajax
+                  </span><br>
+                  Wanderers<br>
+                  Fionn MacCool's<br>
+                  Hilton Garden<br>
+                  Drums & Flats<br>
+                  Pizza Pino's
+                  <br><br><br>
+                </p>
+            </div>
+            <div class="column-2">
+              <p class="main main-column-2">
+                <span class="beer-subtitle">
+                  Toronto
+                </span><br>
+                Sarah's Cafe
+                <br><br>
+                <span class="beer-subtitle">
+                  Oshawa
+                </span><br>
+                Tartan Tavern<br>
+                Bistro 238
+                <br><br>
+                <span class="beer-subtitle">
+                  Bomanville
+                </span><br>
+                Village Inn
+                <br><br>
+                <span class="beer-subtitle">
+                  Stouffville
+                </span><br>
+                Coach House
+                <br><br>
+                <span class="beer-subtitle">
+                  Port Perry
+                </span><br>
+                Blue Heron
+                <br><br>
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </article>

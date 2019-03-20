@@ -9,14 +9,11 @@
   scroll-behavior: smooth;
 }
 
-/* Standard */
 section {
   margin-top: 50px;
 }
 
 h1 {
-  top: -10px;
-  position: absolute;
   color: white;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,22 +21,57 @@ h1 {
   text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
+.page-title {
+  top: -10px;
+  position: absolute;
+}
+
+.right { 
+  right: 20px;
+  cursor: pointer;
+}
+
+.beer-list {
+  margin-top: 3vh;
+  width: 400px;
+}
+
+.beer-title { 
+  font-size: 1.5rem;
+  background-color: rgba(0,0,0,.5);
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: .1s ease;
+}
+
+.beer-title:hover {
+  background-color: rgba(255,255,255,.85);
+  color: #BF1E2E;
+  text-shadow: none;
+  transition: .2s ease;
+}
+
 .content-group {
   display: flex;
+  flex-direction: row;
 }
 
 .main {
   background-color: rgba(0,0,0,.5);
   color: white;
-  width: 15vw;
-  padding: 25px;
-  margin-top: 30px;
+  padding: 100px 25px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1.2rem;
-  display: flex;
-  align-items: center;
 }
 
+.main-width { 
+  width: 20vw;
+}
+
+.tap-info {
+  width: 20vw;
+}
 .desktop-img {
   display: initial;
 }
@@ -48,9 +80,55 @@ h1 {
   display: none;
 }
 
+.image-group {
+  display: flex;
+  align-items: center;
+  margin-left: 185px;
+  margin-top: 3vh;
+}
+
+.beer-subtitle {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.beer-caption {
+  font-weight: bold;
+}
+
+.no-show {
+  display: none;
+}
+
+.show { 
+  display: initial;
+}
+
+.image {
+  width: 34vw;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 img {
-  height: 80vh;
-  margin-top: 10px;
+  height: 70vh;
+  border: 5px solid rgba(0, 0, 0, 0.85);
+  padding: 5px;
+}
+
+.tap-info {
+  display: flex;
+}
+
+.main-column-1 {
+  padding-bottom: 118px; 
+  padding-left: 50px;
+}
+
+.main-column-2 {
+  padding-left: 50px; 
+  padding-right: 75px;
 }
 
 article {
@@ -59,8 +137,6 @@ article {
   left: 0;
   right: 0;
   bottom: 0;
-  /* min-height: 100vh; */
-  /* height: fit-content; */
   height: auto;
   padding: 20px;
   border: 10px solid white;
@@ -68,6 +144,47 @@ article {
 }
 
 /* ---------- Media Queries ------------ */
+
+/* Laptop */
+@media screen and (max-width: 1800px) {
+  .beer-list {
+    margin-top: 1vh;
+  }
+  .beer-title {
+    font-size: 1.25rem;
+    padding: 15px;
+  }
+  .image-group {
+    margin-left: 100px;
+    margin-top: 1vh;
+  }
+  .main {
+    padding: 50px 25px;
+    font-size: 1.15rem;
+  }
+  .main-column-1 {
+    padding-bottom: 50px; 
+    padding-left: 40px;
+  }
+  .main-column-2 {
+    padding-left: 40px; 
+    padding-right: 55px;
+    padding-bottom: 25.5px;
+
+  }
+  .main-width {
+    width: 23vw;
+  }
+  .image {
+    width: 31vw;
+  }
+  .beer-subtitle {
+    font-size: 1.1rem;
+  }
+  .tap-info {
+    width: auto;
+  }
+}
 
 /* iPad - Horizontal */
 @media screen and (max-width: 1025px) {
