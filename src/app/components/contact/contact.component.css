@@ -15,8 +15,6 @@ section {
 }
 
 h1 {
-  top: -10px;
-  position: absolute;
   color: white;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,33 +22,115 @@ h1 {
   text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
+.page-title {
+  top: -10px;
+  position: absolute;
+}
+
+.right { 
+  right: 20px;
+  cursor: pointer;
+}
+
+.beer-list {
+  margin-top: 22vh;
+  width: 200px;
+}
+
+.title { 
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* .beer-title:hover {
+  background-color: rgba(255,255,255,.85);
+  color: #BF1E2E;
+  text-shadow: none;
+  transition: .2s ease;
+} */
+
 .content-group {
   display: flex;
+  flex-direction: row;
+}
+
+.beer-info {
+  position: absolute;
+  right: 55px;
+  top: 135px;
 }
 
 .main {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.85);
   color: white;
-  width: 15vw;
   padding: 25px;
-  margin-top: 30px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1.2rem;
+}
+
+.main-width { 
+  width: 20vw;
+}
+
+.image-group {
   display: flex;
   align-items: center;
+  margin-left: 140px;
+  margin-top: 7vh;
 }
 
-.desktop-img {
-  display: initial;
+.shape {
+  width: 200px;
+  height: 710px;
+  border: 10px solid #BF1E2E;
+  position: absolute;
+  top: 108px;
+  right: 300px;
+  z-index: -1;
 }
 
-.mobile-img { 
+.red {
+  color: #BF1E2E;
+}
+
+.beer-subtitle {
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.beer-caption {
+  font-weight: bold;
+}
+
+.no-show {
   display: none;
 }
 
+.show { 
+  display: initial;
+}
+
+.image {
+  width: 34vw;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 img {
-  height: 80vh;
-  margin-top: 10px;
+  height: 70vh;
+  border: 5px solid rgba(0, 0, 0, 0.85);
+  padding: 5px;
 }
 
 article {
@@ -59,15 +139,62 @@ article {
   left: 0;
   right: 0;
   bottom: 0;
-  /* min-height: 100vh; */
-  /* height: fit-content; */
   height: auto;
   padding: 20px;
   border: 10px solid white;
   margin: 10px;
 }
 
+.map { 
+  position: absolute;
+  right: 545px;
+  top: 60px;
+}
+
+.left {
+  right: unset;
+}
+
 /* ---------- Media Queries ------------ */
+
+/* Laptop */
+@media screen and (max-width: 1800px) {
+  .map {
+    right: 398px;
+    top: 57px;
+  }
+  .left {
+    right: unset;
+    left: 20px;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  .beer-subtitle {
+    font-size: 1.2rem;
+  }
+  .beer-info {
+    top: 80px;
+  }
+  .main {
+    font-size: 1.15rem;
+  }
+  .main-width {
+    width: 15vw;
+  }
+  .image {
+    width: 31vw;
+  }
+  .shape {
+    top: 75px;
+    right: 175px;
+    height: 595px;
+    width: 180px;
+  }
+}
 
 /* iPad - Horizontal */
 @media screen and (max-width: 1025px) {
