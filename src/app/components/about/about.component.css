@@ -82,11 +82,8 @@ article {
 
 /* Laptop */
 @media screen and (max-width: 1800px) {
-  article {
-    min-height: 100vh;
-    height: fit-content;
-  }
-  img { height: 100vh; }
+  .content-group { margin-top: -7px; }
+  .main { font-size: 1.05rem; }
 }
 
 /* iPad - Horizontal */

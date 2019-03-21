@@ -1,22 +1,74 @@
 <div class="events-wrapper">
 
   <article>
-    <h1>Events</h1>
+    <h1 class="page-title">Events</h1>
+    <!-- <h1 class="page-title right" (click)="showCard9()">Where On Tap</h1> -->
     <section>
       <div class="content-group">
-        <img class="mobile-img" src="../../../assets/img/falcon-brewing-1.jpg" alt="">
-        <p class="main">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum reiciendis atque porro recusandae sint vitae quod minima qui ducimus, aut, architecto laudantium sapiente, ullam voluptates amet assumenda expedita fugiat illo!
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto maiores dicta labore quidem sunt earum error quod amet eum reprehenderit ad eaque perferendis, tempora nemo, quibusdam culpa. Non, modi.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt natus, amet consectetur perferendis itaque nesciunt laborum, quos dolorem magnam quia explicabo corporis at ex? Ducimus repellat voluptatibus consequatur obcaecati!
-        </p>
-        <img class="mobile-img" style="margin-top: 0;" src="../../../assets/img/falcon-brewing-44.jpg" alt="">
-        <p class="main mobile-margin-bottom">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor, temporibus, neque veritatis reprehenderit et perspiciatis voluptas porro natus iusto dicta! Sequi eius aperiam quo ad rem eligendi! Reprehenderit, iusto.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores, ea eveniet sunt minima molestias deserunt facere dignissimos aliquam! Sed odit dolore aspernatur! Necessitatibus reiciendis, odio inventore vero pariatur beatae?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem aperiam praesentium magnam aliquid ex temporibus eius consequuntur perferendis dolorum sapiente nobis, quis repellat officia at, excepturi, id distinctio dolore.
-        </p>
-        <img class="desktop-img" src="../../../assets/img/falcon-brewing-1.jpg" alt="">
+        <!-- Beer Titles -->
+        <div class="beer-list">
+          <h1 class="beer-title" (click)="showCard1()">News</h1>
+          <h1 class="beer-title" (click)="showCard2()">Live Music</h1>
+          <h1 class="beer-title" (click)="showCard3()">Contests</h1>
+        </div>
+        <!-- News -->
+        <div class="image-group" id="card-1">
+          <div class="beer-image">
+            <img src="../../../assets/img/falcon-brewing-1.jpg" alt="">
+          </div>
+          <div class="shape"></div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                News
+              </span><br><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium saepe cupiditate nesciunt ab aliquid soluta, suscipit numquam pariatur quas accusamus qui, deleniti facilis assumenda, commodi officiis blanditiis aut recusandae?
+              <br><br>
+              <span class="beer-caption">
+                March 20, 2019
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Live Music -->
+        <div class="image-group no-show" id="card-2">
+          <div class="beer-image">
+            <img src="../../../assets/img/falcon-brewing-47.jpg" alt="">
+          </div>
+          <div class="shape"></div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Live Music
+              </span><br><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum molestias adipisci temporibus necessitatibus, aut illo perferendis doloribus, vitae eum corrupti repudiandae obcaecati inventore, voluptates sapiente similique cumque fuga unde!
+              <br><br>
+              <span class="beer-caption">
+                March 20, 2019
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Contests -->
+        <div class="image-group no-show" id="card-3">
+          <div class="beer-image">
+            <img src="../../../assets/img/falcon-brewing-4.jpg" alt="">
+          </div>
+          <div class="shape"></div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Contests
+              </span><br><br>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, corporis maxime fuga, quis nam saepe nobis quo laudantium temporibus expedita quaerat iure nihil repellendus! Distinctio id asperiores adipisci possimus et?
+              <br><br>
+              <span class="beer-caption">
+                March 20, 2019
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Content Group  -->
       </div>
     </section>
   </article>
