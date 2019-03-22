@@ -1,10 +1,74 @@
 <div class="social-wrapper">
 
   <article>
-    <h1>On Tap</h1>
+    <h1 class="page-title">On Tap</h1>
     <section>
       <div class="content-group">
+        <!-- Beer Titles -->
+        <div class="beer-list">
+          <h1 class="beer-title" (click)="showCard1()">On Tap</h1>
+          <h1 class="beer-title" (click)="showCard2()">Bottle Shop</h1>
+          <h1 class="beer-title" (click)="showCard3()">In Stores</h1>
+          <h1 class="beer-title" (click)="showCard4()">Menu</h1>
+        </div>
+        <!-- On Tap -->
+        <div class="image-group" id="card-1">
+          <div>
+            <img class="image"src="../../../assets/img/falcon-brewing-23.jpg" alt="">
+          </div>
+          <div class="shape"></div>
+          <div class="shape-2"></div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                Falcon Ajax - On Tap
+              </span><br><br>
+              This is what you'll find on tap at our Ajax location. We are constantly changing which brews we have on tap, including working on all new recipes.
+              <br><br>
+              <span class="beer-caption">
+                Last Updated: March 20, 2019
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- Bottle Shop -->
+        <div class="image-group no-show" id="card-2">
+          <div>
+            <img src="../../../assets/img/falcon-brewing-47.jpg" alt="">
+          </div>
+          <div class="shape"></div>
+          <div class="shape-2"></div>
 
+        </div>
+        <!-- In Stores -->
+        <div class="image-group no-show" id="card-3">
+          <div class="beer-image">
+            <img src="../../../assets/img/falcon-cans.png" alt="">
+          </div>
+          <div class="shape"></div>
+          <div class="shape-2"></div>
+          <div class="beer-info">
+            <p class="main main-width">
+              <span class="beer-subtitle">
+                In Stores
+              </span><br><br>
+              You can purchase cans of Falcon Ale and Falcon Lager at LCBOs, Beer Stores, and grocery stores in Southern Ontario. 
+              <br><br>
+              <!-- <span class="beer-caption">
+                Last Updated: March 20, 2019
+              </span> -->
+            </p>
+          </div>
+        </div>
+        <!-- Menu -->
+        <div class="image-group no-show" id="card-4">
+          <div>
+            <img src="../../../assets/img/falcon-brewing-4.jpg" alt="">
+          </div>
+          <div class="shape"></div>
+          <div class="shape-2"></div>
+        </div>
+        <!-- Content Group  -->
       </div>
     </section>
   </article>
