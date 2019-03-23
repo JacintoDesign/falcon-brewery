@@ -32,6 +32,11 @@ h1 {
   cursor: pointer;
 }
 
+.content-group {
+  display: flex;
+  flex-direction: row;
+}
+
 .beer-list {
   margin-top: 22vh;
   width: 220px;
@@ -53,11 +58,6 @@ h1 {
   transition: .2s ease;
 }
 
-.content-group {
-  display: flex;
-  flex-direction: row;
-}
-
 .main {
   background-color: rgba(0,0,0,1);
   color: white;
@@ -70,6 +70,32 @@ h1 {
   width: 20vw;
 }
 
+.main-width-2 {
+  width: 13vw;
+}
+
+.main-width-3 {
+  width: 25vw;
+  padding: 25px;
+  background-color: rgba(0,0,0,.85);
+}
+
+.menu-group {
+  margin-top: -20px;
+  margin-left: 34px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-2 {
+  margin-left: 20px;
+}
+
+.float-right {
+  float: right;
+  font-weight: bold;
+}
+
 .image-group {
   display: flex;
   align-items: center;
@@ -77,24 +103,35 @@ h1 {
   margin-top: 1vh;
 }
 
-.shape {
-  width: 260px;
-  height: 710px;
-  border: 10px solid #BF1E2E;
-  position: absolute;
-  top: 50px;
-  left: 250px;
-  z-index: -1;
+.image-group-2 {
+  display: flex;
+  align-items: center;
+  margin-left: 397px;
+  margin-top: 1vh;
 }
 
-.shape-2 {
-  top: 217px;
-  right: 250px;
-  width: 800px;
-  height: 500px;
-  border: 10px solid #BF1E2E;
-  position: absolute;
-  z-index: -1;
+img {
+  height: 82vh;
+}
+
+.image {
+  border: 5px solid rgba(0, 0, 0, 0.85);
+  padding: 5px;
+}
+
+.image-grid {
+  border: 5px solid rgba(0, 0, 0, 0.85);
+  padding: 2.5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-img {
+  height: 40vh;
+  padding: 2.5px;
 }
 
 .beer-subtitle {
@@ -111,25 +148,6 @@ h1 {
   display: none;
 }
 
-/* .show { 
-  display: initial;
-} */
-
-/* .image {
-  width: 34vw;
-  object-fit: cover;
-  overflow: hidden;
-} */
-
-img {
-  height: 82vh;
-}
-
-.image {
-  border: 5px solid rgba(0, 0, 0, 0.85);
-  padding: 5px;
-}
-
 article {
   position: absolute;
   top: 0;
@@ -142,12 +160,85 @@ article {
   margin: 10px;
 }
 
+/* Shapes */
+.shape {
+  border: 10px solid #BF1E2E;
+  position: absolute;
+  z-index: -1;
+}
+
+.shape-1 {
+  top: 50px;
+  left: 250px;
+  width: 260px;
+  height: 710px;
+}
+
+.shape-2 {
+  top: 216px;
+  right: 220px;
+  width: 400px;
+  height: 500px;
+  border: 10px dashed #BF1E2E;
+}
+
+.shape-3 {
+  top: 217px;
+  right: 396px;
+  width: 500px;
+  height: 480px;
+}
+
+.shape-4 {
+  top: 100px;
+  left: 480px;
+  width: 260px;
+  height: 710px;
+  border: 10px dashed #BF1E2E;
+}
+
+.shape-5 {
+  top: 217px;
+  right: 180px;
+  width: 200px;
+  height: 480px;
+  border: 10px dashed #BF1E2E;
+}
+
+.shape-6 {
+  top: 125px;
+  right: 200px;
+  width: 295px;
+  height: 600px;
+  border: 10px dashed #BF1E2E;
+}
+
 /* ---------- Media Queries ------------ */
 
-/* Laptop */
+/* Monitor - Fullscreen */
+@media screen and (min-width: 1800px) and (min-height: 1000px) {
+  section {
+    margin-top: 85px;
+  }
+  img {
+    height: 75vh;
+  }
+}
+
+/* Monitor - No Bookmarks Bar */
+@media screen and (min-width: 1800px) and (min-height: 938px) {
+  .image-group {
+    margin-left: 103px;
+  }
+  .main-width {
+    width: 18vw;
+  }
+}
+
+/* Laptop (Bookmarks Bar) */
 @media screen and (max-width: 1800px) {
   .beer-list {
-    margin-top: 22vh;
+    margin-top: 17vh;
   }
   .beer-title {
     font-size: 1.25rem;
@@ -167,7 +258,7 @@ article {
   .main-width {
     width: 17vw;
   }
-  .shape {
+  .shape-1 {
     top: 40px;
     width: 185px;
     height: 570px;
@@ -181,6 +272,56 @@ article {
   .beer-image { 
     margin-left: 161px;
     margin-top: 20px;
+  }
+  .grid-img {
+    height: 39vh;
+  }
+  .image-grid {
+    margin-top: 7px;
+    margin-left: -20px;
+  }
+  .shape-5 {
+    top: 200px;
+    right: 129px;
+    width: 200px;
+    height: 345px;
+  }
+  .shape-4 {
+    top: 80px;
+    left: 384px;
+    width: 260px;
+    height: 570px;
+  }
+  .shape-3 {
+    top: 185px;
+    right: 370px;
+    width: 340px;
+    height: 390px;
+  }
+  .beer-cans {
+    margin-left: -107px;
+    margin-top: 10px;
+  }
+  .menu-group {
+    margin-top: 0;
+    margin-left: -30px;
+  }
+  .menu {
+    padding: 15px 25px;
+    font-size: 1rem;
+  }
+  .main-width-3 {
+    width: 28vw;
+  }
+  .menu-bottom {
+    padding-bottom: 25px;
+  }
+  .shape-6 {
+    top: 130px;
+    right: 92px;
+    width: 260px;
+    height: 494px;
+    border: 10px dashed #BF1E2E;
   }
 }
 
