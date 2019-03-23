@@ -87,6 +87,11 @@ h1 {
   z-index: -1;
 }
 
+.shape-2 {
+  top: 203px;
+  height: 570px;
+}
+
 .beer-subtitle {
   font-weight: bold;
   font-size: 1.5rem;
@@ -105,14 +110,16 @@ h1 {
   display: initial;
 }
 
-.image {
-  width: 34vw;
+/* .image {
   object-fit: cover;
   overflow: hidden;
-}
+} */
 
 img {
   height: 70vh;
+}
+
+.image {
   border: 5px solid rgba(0, 0, 0, 0.85);
   padding: 5px;
 }
@@ -127,6 +134,27 @@ article {
   padding: 20px;
   border: 10px solid white;
   margin: 10px;
+}
+
+.float-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.image-grid {
+  margin-top: 0;
+  border: 5px solid rgba(0, 0, 0, 0.85);
+  padding: 2.5px;
+}
+
+.grid-img {
+  height: 35vh;
+  padding: 2.5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 /* ---------- Media Queries ------------ */
@@ -151,12 +179,16 @@ article {
   .main-width {
     width: 23vw;
   }
-  .image {
-    width: 31vw;
-  }
   .shape {
     top: 75px;
     height: 580px;
+  }
+  .image-grid {
+    margin-top: -3px;
+  }
+  .main-events {
+    padding: 75px 25px;
+    width: 20vw;
   }
 }
 

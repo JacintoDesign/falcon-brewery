@@ -8,13 +8,14 @@
         <!-- Beer Titles -->
         <div class="beer-list">
           <h1 class="beer-title" (click)="showCard1()">News</h1>
-          <h1 class="beer-title" (click)="showCard2()">Live Music</h1>
-          <h1 class="beer-title" (click)="showCard3()">Contests</h1>
+          <h1 class="beer-title" (click)="showCard2()">Events</h1>
+          <h1 class="beer-title" (click)="showCard3()">Live Music</h1>
+          <h1 class="beer-title" (click)="showCard4()">Contests</h1>
         </div>
         <!-- News -->
-        <div class="image-group" id="card-1">
+        <div class="image-group no-show" id="card-1">
           <div class="beer-image">
-            <img src="../../../assets/img/falcon-brewing-1.jpg" alt="">
+            <img class="image" src="../../../assets/img/falcon-brewing-1.jpg" alt="">
           </div>
           <div class="shape"></div>
           <div class="beer-info">
@@ -30,29 +31,58 @@
             </p>
           </div>
         </div>
+        <!-- Events -->
+        <div class="image-group" id="card-2">
+            <div class="image-grid">
+                <div class="row">
+                  <img src="../../../assets/img/falcon-open-mic.png" alt="" class="grid-img">
+                  <img src="../../../assets/img/falcon-cards.png" alt="" class="grid-img">
+                  <img src="../../../assets/img/falcon-cards.png" alt="" class="grid-img">
+                </div>
+                <div class="row">
+                  <img src="../../../assets/img/falcon-yoga.png" alt="" class="grid-img">
+                  <img src="../../../assets/img/falcon-trivia.png" alt="" class="grid-img">
+                  <img src="../../../assets/img/falcon-cards.png" alt="" class="grid-img">
+                </div>
+              </div>
+          <div class="shape"></div>
+          <div class="beer-info">
+            <p class="main main-width main-events ">
+              <span class="beer-subtitle">
+                Events
+              </span><br><br>
+              <span class="beer-caption">Open Mic Night</span><span class="float-right">March 20</span><br>
+              <span class="beer-caption">Euchre Night</span><span class="float-right">March 27</span><br>
+              <span class="beer-caption">Beer Yoga</span><span class="float-right">April 3</span><br>
+              <span class="beer-caption">Trivia Night</span><span class="float-right">April 7</span><br>
+              <span class="beer-caption">Beer Yoga</span><span class="float-right">April 3</span><br>
+              <span class="beer-caption">Trivia Night</span><span class="float-right">April 7</span><br>
+            </p>
+          </div>
+        </div>
         <!-- Live Music -->
-        <div class="image-group no-show" id="card-2">
+        <div class="image-group no-show" id="card-3">
           <div class="beer-image">
-            <img src="../../../assets/img/falcon-brewing-47.jpg" alt="">
+            <img class="image" src="../../../assets/img/falcon-brewing-47.jpg" alt="">
           </div>
           <div class="shape"></div>
           <div class="beer-info">
-            <p class="main main-width">
+            <p class="main main-width main-events">
               <span class="beer-subtitle">
                 Live Music
               </span><br><br>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum molestias adipisci temporibus necessitatibus, aut illo perferendis doloribus, vitae eum corrupti repudiandae obcaecati inventore, voluptates sapiente similique cumque fuga unde!
-              <br><br>
-              <span class="beer-caption">
-                March 20, 2019
-              </span>
+              <span class="beer-caption">Band Name Here</span><span class="float-right">March 20</span><br>
+              <span class="beer-caption">Band Name Here</span><span class="float-right">March 20</span><br>
+              <span class="beer-caption">Band Name Here</span><span class="float-right">March 20</span><br>
+              <span class="beer-caption">Band Name Here</span><span class="float-right">March 20</span><br>
+              <span class="beer-caption">Band Name Here</span><span class="float-right">March 20</span><br>
             </p>
           </div>
         </div>
         <!-- Contests -->
-        <div class="image-group no-show" id="card-3">
+        <div class="image-group no-show" id="card-4">
           <div class="beer-image">
-            <img src="../../../assets/img/falcon-brewing-4.jpg" alt="">
+            <img class="image" src="../../../assets/img/falcon-brewing-4.jpg" alt="">
           </div>
           <div class="shape"></div>
           <div class="beer-info">

@@ -27,11 +27,17 @@ export class EventsComponent implements OnInit {
     card.classList.add("no-show")
   }
 
+  hideCard4() {
+    let card = document.getElementById("card-4");
+    card.classList.add("no-show")
+  }
+
   showCard1() {
     let card = document.getElementById("card-1");
     card.classList.remove("no-show");
     this.hideCard2();
     this.hideCard3();
+    this.hideCard4();
   }
 
   showCard2() {
@@ -39,6 +45,7 @@ export class EventsComponent implements OnInit {
     card.classList.remove("no-show");
     this.hideCard1();
     this.hideCard3();
+    this.hideCard4();
   }
 
   showCard3() {
@@ -46,5 +53,14 @@ export class EventsComponent implements OnInit {
     card.classList.remove("no-show");
     this.hideCard1();
     this.hideCard2();
+    this.hideCard4();
+  }
+
+  showCard4() {
+    let card = document.getElementById("card-4");
+    card.classList.remove("no-show");
+    this.hideCard1();
+    this.hideCard2();
+    this.hideCard3();
   }
 }
