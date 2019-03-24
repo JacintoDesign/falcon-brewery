@@ -156,7 +156,7 @@ article {
   bottom: 0;
   height: auto;
   padding: 20px;
-  border: 10px solid white;
+  border: 10px solid rgba(255, 255, 255, 0.85);
   margin: 10px;
 }
 

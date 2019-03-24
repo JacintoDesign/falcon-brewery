@@ -49,7 +49,7 @@ h1 {
   width: 35vw;
   object-fit: cover;
   overflow: hidden;
-  border: 5px solid rgba(0, 0, 0, 0.85);
+  border: 10px solid #BF1E2E;
   padding: 5px;
 }
 
@@ -74,7 +74,7 @@ article {
   bottom: 0;
   height: auto;
   padding: 20px;
-  border: 10px solid white;
+  border: 10px solid rgba(255, 255, 255, 0.85);
   margin: 10px;
 }
 
@@ -84,6 +84,7 @@ article {
 @media screen and (max-width: 1800px) {
   .content-group { margin-top: -7px; }
   .main { font-size: 1.05rem; }
+  .image { border: 5px solid #BF1E2E; }
 }
 
 /* iPad - Horizontal */
