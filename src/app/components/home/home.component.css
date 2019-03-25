@@ -119,7 +119,7 @@ article {
   .logo { margin-top: 5vh; }
   .falcon-logo { width: 90%; }
   .falcon-text { width: 90%; margin-top: 2%; }
-  article { margin: 15px; border-width: 5px; }
+  article { margin: 10px; padding: 15px; border-width: 5px; }
 
   /* Social Icons */
   .social-icons { top: -10px}

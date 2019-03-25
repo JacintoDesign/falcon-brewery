@@ -9,7 +9,6 @@
   scroll-behavior: smooth;
 }
 
-/* Standard */
 section {
   margin-top: 50px;
 }
@@ -42,13 +41,6 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
 }
-
-/* .beer-title:hover {
-  background-color: rgba(255,255,255,.85);
-  color: #BF1E2E;
-  text-shadow: none;
-  transition: .2s ease;
-} */
 
 .content-group {
   display: flex;
@@ -160,6 +152,16 @@ article {
   display: block;
   width: 645px;
   height: 510px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-logo {
+  height: 300px;
+  width: 300px;
+  border: none;
 }
 
 /* ---------- Media Queries ------------ */
@@ -223,18 +225,68 @@ article {
 @media screen and (max-width: 600px) {
   section { margin-top: 30px; }
   h1 { top: -20px; left: 55px; }
+  .article { min-height: 100vh; height: fit-content; }
   .content-group { display: block; }
   .main { width: 81.5%; margin-top: 10px; font-size: 1rem; padding: 25px 25px 25px 40px; }
   .mobile-margin-bottom { margin-bottom: 0; }
   .desktop-img { display: none; }
   .mobile-img { display: initial; }
   img { width: 100%; height: auto; }
+  .page-title { top: -20px; }
   article { 
-    margin: 15px; 
-    padding: 10px; 
+    margin: 10px; 
+    padding: 15px; 
     border: 5px solid rgba(255, 255, 255, 0.85); 
     min-height: 100vh;
     height: fit-content;
+  }
+  .iframe-container {
+    margin-top: -10px;
+    height: 300px;
+    width: 350px;
+  }
+  .left {
+    left: unset;
+    margin-top: 0 !important;
+  }
+  .subtitle {
+    font-size: 1rem; 
+  }
+  .map-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .map {
+    right: unset;
+    top: unset;
+    position: relative;
+    margin-top: 10px;
+  }
+  .google-logo {
+    height: 200px;
+    width: 200px;
+  }
+  .beer-info {
+    margin-top: 20px;
+    position: relative;
+    right: unset;
+    top: unset;
+  }
+  .main {
+    margin-bottom: 5px;
+    width: auto;
+  }
+  .less-padding {
+    padding: 25px 15px;
+  }
+  .map-text {
+    margin-bottom: 15px;
+  }
+  .shape {
+    top: 1150px;
+    right: 55px;
+    height: 595px;
+    width: 180px;
   }
 }
 
@@ -245,7 +297,11 @@ article {
 
 /* iPhone 6/7/8 */
 @media screen and (max-width: 376px) and (max-height: 668px) {
-
+  .main { width: auto; }
+  .iframe-container { width: 315px; }
+  .left { margin-top: 0; }
+  .shape { top: 1177px; }
+  .less-padding { padding: 25px 15px; }
 }
 
 /* iPhone 6/7/8 - Horizontal */
