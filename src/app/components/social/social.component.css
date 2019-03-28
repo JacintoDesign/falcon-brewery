@@ -223,27 +223,30 @@ article {
 
 /* ---------- Media Queries ------------ */
 
-/* Monitor - Fullscreen */
-@media screen and (min-width: 1800px) and (min-height: 1000px) {
-  section {
-    margin-top: 85px;
-  }
-  img {
-    height: 75vh;
-  }
-}
-
 /* Monitor - No Bookmarks Bar */
 @media screen and (min-width: 1800px) and (min-height: 938px) {
-  .image-group {
-    margin-left: 103px;
-  }
-  .main-width {
-    width: 18vw;
-  }
+  .image-group { margin-left: 103px; }
+  .main-width { width: 18vw; }
+  .shape-2 { top: 239px; }
+  .shape-3 { top: 237px; }
+  .shape-4 { top: 70px; }
+  .shape-5 { top: 225px; }
+  .shape-6 { right: 235px; top: 135px; }
+  section { margin-top: 60px; }
 }
 
-/* Laptop (Bookmarks Bar) */
+/* Monitor - Fullscreen */
+@media screen and (min-width: 1800px) and (min-height: 1000px) {
+  section { margin-top: 95px; }
+  img { height: 75vh; }
+  .grid-img { height: 36vh; }
+  .shape-2 { top: 283px; }
+  .shape-3 { top: 280px; right: 375px; }
+  .shape-5 { top: 262px; }
+  .shape-6 { top: 175px; }
+}
+
+/* Laptop - Bookmarks Bar */
 @media screen and (max-width: 1800px) {
   .beer-list {
     margin-top: 17vh;
@@ -331,6 +334,35 @@ article {
     height: 494px;
     border: 10px dashed #BF1E2E;
   }
+}
+
+/* Laptop - No Bookmarks Bar */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 760px) {
+  section { margin-top: 55px; }
+  .image-group { margin-left: 105px; }
+  .grid-img { height: 38vh; }
+  .beer-list { margin-top: 20vh; }
+  .shape-2 { top: 192px; right: 184px; }
+  .shape-3 { top: 200px; }
+  .shape-4 { top: 70px; }
+  .shape-5 { top: 209px; right: 139px; }
+  .shape-6 { top: 133px; right: 65px; }
+}
+
+/* Laptop - Fullscreen */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 800px) {
+  section { margin-top: 100px; }
+  img { height: 73vh; }
+  .grid-img { height: 34vh; }
+  .tap-group { margin-left: 86px; }
+  .tap-width { width: 15vw; }
+  .main-width-2 { width: 11.6vw; }
+  .shape-1 { top: 85px; }
+  .shape-2 { top: 231px; right: 168px; height: 440px; }
+  .shape-3 { top: 257px; right: 335px; }
+  .shape-4 { top: 112px; height: 600px; }
+  .shape-5 { top: 260px; right: 150px; }
+  .shape-6 { top: 175px; }
 }
 
 /* iPad - Horizontal */

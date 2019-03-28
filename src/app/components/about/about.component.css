@@ -80,11 +80,35 @@ article {
 
 /* ---------- Media Queries ------------ */
 
-/* Laptop */
-@media screen and (max-width: 1800px) {
+/* Monitor - No Bookmarks Bar */
+@media screen and (min-width: 1800px) and (min-height: 938px) {
+  section {
+    margin-top: 55px;
+  }
+}
+
+/* Monitor - Fullscreen */
+@media screen and (min-width: 1800px) and (min-height: 1000px) {
+  section {
+    margin-top: 65px;
+  }
+}
+
+/* Laptop - Bookmarks Bar */
+@media screen and (max-width: 1799px) {
   .content-group { margin-top: -7px; }
   .main { font-size: 1.05rem; }
   .image { border: 5px solid #BF1E2E; }
+}
+
+/* Laptop - No Bookmarks Bar */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 760px) {
+  .content-group { margin-top: -3px; }
+}
+
+/* Laptop - Fullscreen */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 800px) {
+  .content-group { margin-top: 60px; }
 }
 
 /* iPad - Horizontal */

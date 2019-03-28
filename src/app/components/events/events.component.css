@@ -89,7 +89,7 @@ h1 {
 
 .shape {
   width: 710px;
-  height: 710px;
+  height: 715px;
   border: 10px solid #BF1E2E;
   position: absolute;
   top: 108px;
@@ -125,7 +125,7 @@ h1 {
 }
 
 img {
-  height: 70vh;
+  height: 70.5vh;
 }
 
 .image {
@@ -266,17 +266,30 @@ article {
   border: none;
 }
 
-/* Calendar */
-.view-container-border {
-  padding: 0 !important;
-}
-
 /* ---------- Media Queries ------------ */
 
-/* Laptop */
+/* Monitor - No Bookmarks Bar */
+@media screen and (min-width: 1800px) and (min-height: 938px) {
+  .shape { height: 740px; }
+  .image-group { margin-left: 115px; }
+  .half-image-group { width: 53.5vw; }
+  .half-image { width: 1030px; }
+}
+
+/* Monitor - Fullscreen */
+@media screen and (min-width: 1800px) and (min-height: 1000px) {
+  .image-group { margin-left: 80px; }
+  .main-width { width: 17vw; }
+  .half-image-group { width: 56.5vw; }
+  .half-image { width: 1134px; height: 378px; }
+  .shape { height: 835px; }
+  .news-width { width: 20vw; }
+}
+
+/* Laptop - Bookmarks Bar */
 @media screen and (max-width: 1800px) {
   .beer-list {
-    margin-top: 22vh;
+    margin-top: 20vh;
   }
   .beer-title {
     font-size: 1.25rem;
@@ -293,6 +306,13 @@ article {
   .main-width {
     width: 23vw;
   }
+  .main-events {
+    padding: 15px 25px;
+    font-size: 1rem;
+  }
+  .img-middle {
+    left: 42.5%;
+  }
   .shape {
     top: 75px;
     height: 580px;
@@ -301,12 +321,45 @@ article {
     margin-top: -3px;
   }
   .main-events {
-    width: 20vw;
+    width: 23vw;
+  }
+  .half-image-group {
+    width: 50.5vw;
+  }
+  .half-image {
+    height: 260px;
   }
   .iframe-container {
     width: 560px;
     height: 350px;
   }
+  img { 
+    height: 71vh; 
+  }
+  .contest-image {
+    margin-top: -5px;
+  }
+}
+
+/* Laptop - No Bookmarks Bar */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 760px) {
+  section { margin-top: 60px; }
+  .shape { height: 620px; }
+  .main-events { padding: 25px; width: 22vw; }
+  .half-image { height: 274px; }
+  .half-image-group { width: 51.5vw; }
+}
+
+/* Laptop - Fullscreen */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 800px) {
+  section { margin-top: 100px; }
+  .main-width { width: 18vw; }
+  img { height: 65vh; }
+  .grid-img { height: 32vh; }
+  .shape { top: 108px; height: 670px; }
+  .main-events { padding: 15px 25px; }
+  .half-image { height: 280px; }
+  .half-image-group { width: 54.5vw; }
 }
 
 /* iPad - Horizontal */

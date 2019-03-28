@@ -24,7 +24,7 @@ library.add(faInstagram, faTwitter, faFacebookF);
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'beer', component: BeerComponent },
-  { path: 'social', component: SocialComponent },
+  { path: 'on-tap', component: SocialComponent },
   { path: 'events', component: EventsComponent },
   { path: 'contact', component: ContactComponent },
 ];
