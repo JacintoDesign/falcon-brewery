@@ -165,8 +165,8 @@ article {
 /* iPhone X */
 @media screen and (max-width: 376px) {
   img { width: 100vw; }
-  .main { width: 85%; }
-  .mobile-margin-bottom { margin-bottom: 10px; }
+  .main { width: 86%; }
+  .mobile-margin-bottom { margin-bottom: 0px; }
 }
 
 /* iPhone 6/7/8 */
