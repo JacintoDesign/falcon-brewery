@@ -21,6 +21,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+  padding: 0;
 }
 
 .title {
@@ -78,6 +79,9 @@ article {
   margin: 10px;
 }
 
+.mobile-title { display: none; }
+.desktop-title { display: initial; }
+
 /* ---------- Media Queries ------------ */
 
 /* Monitor - No Bookmarks Bar */
@@ -114,6 +118,7 @@ article {
 /* iPad - Horizontal */
 @media screen and (max-width: 1025px) {
   section { margin-top: 30px; }
+  .content-group { margin-top: unset; }
   h1 { top: 1px; left: 80px; }
   img { width: 100%; height: auto; }
 }
@@ -126,17 +131,27 @@ article {
 /* Galaxy */
 @media screen and (max-width: 600px) {
   section { margin-top: 30px; }
-  h1 { top: -20px; left: 55px; }
+  .content-group { margin-top: unset; }
   .content-group { display: block; }
-  .main { width: 81.5%; margin-top: 10px; font-size: 1rem; padding: 25px 25px 25px 40px; }
-  .mobile-margin-bottom { margin-bottom: 0; }
+  .main { width: 87%; margin-top: 10px; font-size: 1.025rem; }
+  .mobile-margin-bottom { margin-bottom: 5px; }
   .desktop-img { display: none; }
   .mobile-img { display: initial; }
-  img { width: 100%; height: auto; }
+  img { width: 100vw; height: auto; margin-left: -10px; }
+  .mobile-title { display: initial; }
+  .desktop-title { display: none; }
+  h1 { 
+    top: -30px; 
+    left: 0px;   
+    background-color: rgba(233, 12, 34, 0.85);
+    padding: 10px 10px 5.1px 60px;
+    position: fixed;
+    width: 100%;
+  }
   article { 
-    margin: 10px; 
-    padding: 15px; 
-    border: 5px solid rgba(255, 255, 255, 0.85); 
+    margin: 0; 
+    padding: 10px; 
+    border: 0px solid rgba(255, 255, 255, 0.85); 
     min-height: 100vh;
     height: fit-content;
   }
@@ -145,6 +160,13 @@ article {
 /* Galaxy - Horizontal */
 @media screen and (max-width: 850px) and (max-height: 500px) {
 
+}
+
+/* iPhone X */
+@media screen and (max-width: 376px) {
+  img { width: 100vw; }
+  .main { width: 85%; }
+  .mobile-margin-bottom { margin-bottom: 10px; }
 }
 
 /* iPhone 6/7/8 */
