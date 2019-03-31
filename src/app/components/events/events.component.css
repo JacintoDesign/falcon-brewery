@@ -98,8 +98,7 @@ h1 {
 }
 
 .shape-2 {
-  top: 203px;
-  height: 570px;
+  display: none;
 }
 
 .beer-subtitle {
@@ -425,6 +424,16 @@ article {
     min-height: 97vh;
     height: fit-content;
   }
+  .shape-2 {
+    width: 200px;
+    height: 450px;
+    border: 10px dashed #BF1E2E;
+    position: absolute;
+    top: 163px;
+    left: -22px;
+    z-index: -1;
+    display: initial;
+  }
   .title-alt {
     background-color: rgba(255,255,255,.85);
     color: #BF1E2E;
@@ -439,7 +448,6 @@ article {
     color: black; 
     position: relative; 
     left: -30px; 
-    top: -5px; 
     margin-right: -30px;
     font-size: 2rem; 
   }
@@ -463,6 +471,7 @@ article {
   .img-middle-music-3 { left: 45%; }
   .main-music { width: 82.5vw; }
   .half-image-group { width: 90.25vw; }
+  .news-image-group { top: 90px; }
   /* .iframe-container {
     margin-top: -10px;
     height: 300px;
@@ -488,6 +497,7 @@ article {
 /* iPhone 6/7/8 */
 @media screen and (max-width: 376px) and (max-height: 668px) {
   .image-group { top: 100px; }
+  .shape-2 { height: 425px; top: 90px; left: -21px; }
 }
 
 /* iPhone 6/7/8 - Horizontal */
