@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faInstagram, faTwitter, faFacebookF  } from '@fortawesome/free-brands-svg-icons';
+import { faSortDown  } from '@fortawesome/free-solid-svg-icons';
 
 import { AboutComponent } from './components/about/about.component';
 import { BeerComponent } from './components/beer/beer.component';
@@ -19,7 +20,7 @@ import { HomeComponent } from './components/home/home.component';
 
 import { NavMenuComponent } from './shared/components/nav-menu/nav-menu.component';
 
-library.add(faInstagram, faTwitter, faFacebookF);
+library.add(faInstagram, faTwitter, faFacebookF, faSortDown);
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },

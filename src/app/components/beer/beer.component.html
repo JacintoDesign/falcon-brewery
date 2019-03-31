@@ -7,7 +7,7 @@
       <div class="content-group">
         <div class="shape"></div>
         <!-- Beer Titles -->
-        <div class="beer-list">
+        <div class="beer-list show-desktop">
           <h1 class="beer-title" (click)="showCard1()">Red Falcon Ale</h1>
           <h1 class="beer-title" (click)="showCard2()">Laggar Falcon Craft Lager</h1>
           <h1 class="beer-title" (click)="showCard3()">Bomb Girls Blond Ale</h1>
@@ -16,6 +16,22 @@
           <h1 class="beer-title" (click)="showCard6()">Salem Stout</h1>
           <h1 class="beer-title" (click)="showCard7()">Ginger Haze</h1>
           <h1 class="beer-title" (click)="showCard8()">Light Cruiser English Mild</h1>
+        </div>
+        <!-- Beer Titles - Mobile -->
+        <div class="beer-list-mobile show-mobile" (click)="toggleBeerList()">
+          <h1 class="beer-title title-alt" style="padding: 15px;">Select a Beer</h1>
+          <fa-icon [icon]="['fas', 'sort-down']" class="icon"></fa-icon>
+        </div>
+        <div class="beer-list show-mobile beer-list-hide" id="mobile-beer-menu">
+          <h1 class="beer-title" (click)="showCard1()">Red Falcon Ale</h1>
+          <h1 class="beer-title" (click)="showCard2()">Laggar Falcon Craft Lager</h1>
+          <h1 class="beer-title" (click)="showCard3()">Bomb Girls Blond Ale</h1>
+          <h1 class="beer-title" (click)="showCard4()">Munition IPA</h1>
+          <h1 class="beer-title" (click)="showCard5()">Kent's Best Bitter</h1>
+          <h1 class="beer-title" (click)="showCard6()">Salem Stout</h1>
+          <h1 class="beer-title" (click)="showCard7()">Ginger Haze</h1>
+          <h1 class="beer-title" (click)="showCard8()">Light Cruiser English Mild</h1>
+          <h1 class="beer-title red" (click)="showCard9()">Where on Tap</h1>
         </div>
         <!-- Falcon Ale -->
         <div class="image-group" id="card-1">
