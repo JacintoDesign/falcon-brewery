@@ -5,7 +5,18 @@
     <section>
       <div class="content-group">
         <!-- Beer Titles -->
-        <div class="beer-list">
+        <div class="beer-list show-desktop">
+          <h1 class="beer-title" (click)="showCard1()">On Tap</h1>
+          <h1 class="beer-title" (click)="showCard2()">Bottle Shop</h1>
+          <h1 class="beer-title" (click)="showCard3()">In Stores</h1>
+          <h1 class="beer-title" (click)="showCard4()">Menu</h1>
+        </div>
+        <!-- Beer Titles - Mobile -->
+        <div class="beer-list-mobile show-mobile" (click)="toggleBeerList()">
+          <h1 class="beer-title title-alt" style="padding: 15px;">What We Offer</h1>
+          <fa-icon [icon]="['fas', 'sort-down']" class="icon"></fa-icon>
+        </div>
+        <div class="beer-list show-mobile beer-list-hide" id="mobile-beer-menu">
           <h1 class="beer-title" (click)="showCard1()">On Tap</h1>
           <h1 class="beer-title" (click)="showCard2()">Bottle Shop</h1>
           <h1 class="beer-title" (click)="showCard3()">In Stores</h1>
@@ -32,7 +43,7 @@
           </div>
         </div>
         <!-- Bottle Shop -->
-        <div class="image-group no-show" id="card-2">
+        <div class="image-group bottle-group no-show" id="card-2">
           <div class="image-grid">
             <div class="row">
               <img src="../../../assets/img/falcon-brewing-33.jpg" alt="Kent's Extra Special Bitter" class="grid-img">
@@ -71,7 +82,7 @@
           <div class="shape shape-4"></div>
           <div class="shape shape-3"></div>
           <div class="beer-info">
-            <p class="main main-width">
+            <p class="main main-width mobile-margin-bottom">
               <span class="beer-subtitle">
                 In Stores
               </span><br><br>

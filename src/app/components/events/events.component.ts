@@ -11,6 +11,11 @@ export class EventsComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  toggleBeerList() {
+    let beerList = document.getElementById("mobile-beer-menu");
+    beerList.classList.toggle("beer-list-hide");
+  }
   
   hideCard1() {
     let card = document.getElementById("card-1");
@@ -38,6 +43,7 @@ export class EventsComponent implements OnInit {
     this.hideCard2();
     this.hideCard3();
     this.hideCard4();
+    this.toggleBeerList();
   }
 
   showCard2() {
@@ -46,6 +52,7 @@ export class EventsComponent implements OnInit {
     this.hideCard1();
     this.hideCard3();
     this.hideCard4();
+    this.toggleBeerList();
   }
 
   showCard3() {
@@ -54,6 +61,7 @@ export class EventsComponent implements OnInit {
     this.hideCard1();
     this.hideCard2();
     this.hideCard4();
+    this.toggleBeerList();
   }
 
   showCard4() {
@@ -62,5 +70,6 @@ export class EventsComponent implements OnInit {
     this.hideCard1();
     this.hideCard2();
     this.hideCard3();
+    this.toggleBeerList();
   }
 }

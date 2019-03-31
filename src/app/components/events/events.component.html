@@ -6,7 +6,18 @@
     <section>
       <div class="content-group">
         <!-- Beer Titles -->
-        <div class="beer-list">
+        <div class="beer-list show-desktop">
+          <h1 class="beer-title" (click)="showCard1()">News</h1>
+          <h1 class="beer-title" (click)="showCard2()">Events</h1>
+          <h1 class="beer-title" (click)="showCard3()">Live Music</h1>
+          <h1 class="beer-title" (click)="showCard4()">Contests</h1>
+        </div>
+        <!-- Beer Titles - Mobile -->
+        <div class="beer-list-mobile show-mobile" (click)="toggleBeerList()">
+          <h1 class="beer-title title-alt" style="padding: 15px;">News & Events</h1>
+          <fa-icon [icon]="['fas', 'sort-down']" class="icon"></fa-icon>
+        </div>
+        <div class="beer-list show-mobile beer-list-hide" id="mobile-beer-menu">
           <h1 class="beer-title" (click)="showCard1()">News</h1>
           <h1 class="beer-title" (click)="showCard2()">Events</h1>
           <h1 class="beer-title" (click)="showCard3()">Live Music</h1>
