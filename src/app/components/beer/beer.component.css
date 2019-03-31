@@ -270,9 +270,9 @@ article {
   .page-title { top: -30px; position: fixed; z-index: 10; }
   img { width: 95%; height: auto; }
   .image { width: 95%; }
-  .main { margin-top: 5px; font-size: 1rem; margin-bottom: 0; padding: 25px; }
+  .main { margin-top: 5px; font-size: 1rem; margin-bottom: 10px; padding: 25px; }
   .main-width { width: auto; }
-  .main-column-1 { width: 37%; position: absolute; left: 0; padding-bottom: 52px; }
+  .main-column-1 { width: 85%; position: absolute; left: 0; padding-bottom: 52px; margin-bottom: 10px; }
   .main-column-2 { width: 36%; position: absolute; }
   .right { display: none; }
   .show-desktop { display: none; }
@@ -298,7 +298,7 @@ article {
     margin: 0; 
     padding: 10px; 
     border: 0; 
-    min-height: 100vh;
+    min-height: 97vh;
     height: fit-content;
   }
   .image-group { 
@@ -329,9 +329,19 @@ article {
 
 }
 
+@media screen and (max-width: 600px) and (max-height: 839px) {
+  article { min-height: 100vh; }
+}
+
 /* Galaxy - Horizontal */
 @media screen and (max-width: 850px) and (max-height: 500px) {
 
+}
+
+/* iPhone X */
+@media screen and (max-width: 376px) {
+  .main-column-1 { width: 84%; margin-bottom: 10px; }
+  .main-column-2 { width: 34%; }
 }
 
 /* iPhone 6/7/8 */
