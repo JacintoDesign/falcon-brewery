@@ -393,9 +393,14 @@ article {
   .mobile-margin-bottom { margin-bottom: 0; }
   .show-desktop { display: none; }
   .show-mobile { display: initial; }
+  .shape { display: none; }
   .desktop-img { display: none; }
   .mobile-img { display: initial; }
-  img { width: 100%; height: auto; }
+  img { width: 95%; height: auto; }
+  .image-grid { display: flex; margin-left: unset; }
+  .grid-img { height: auto; width: 97%; }
+  .row { flex-direction: column-reverse; }
+  .row-column { flex-direction: column; }
   .page-title { top: -30px; position: fixed; z-index: 10; }
   .beer-list { width: auto; left: unset; top: 0; position: relative; transition: .3s ease; }
   .beer-list-hide { left: -600px !important; transition: .3s ease; }
@@ -434,9 +439,30 @@ article {
     color: black; 
     position: relative; 
     left: -30px; 
+    top: -5px; 
     margin-right: -30px;
     font-size: 2rem; 
   }
+  .image-group { 
+    flex-direction: column; 
+    margin-left: 0; 
+    position: absolute;
+    top: 95px;
+    padding-right: 10px;
+    z-index: -1;
+  }
+  .img-text {
+    width: 66%; 
+    background-color: rgba(0,0,0,.5);
+    font-size: 1rem; 
+  }
+  .img-text-pad { padding: 16px 26px; }
+  .img-middle { left: 43%; }
+  .img-middle-music { left: 46%; }
+  .img-middle-music-2 { left: 50%; }
+  .img-middle-music-3 { left: 45%; }
+  .main-music { width: 82.5vw; }
+  .half-image-group { width: 90.25vw; }
   /* .iframe-container {
     margin-top: -10px;
     height: 300px;
@@ -453,9 +479,15 @@ article {
 
 }
 
+/* iPhone X */
+@media screen and (max-width: 376px) {
+  .main-music { width: 81.25vw; }
+  .half-image-group { width: 89.25vw; }
+}
+
 /* iPhone 6/7/8 */
 @media screen and (max-width: 376px) and (max-height: 668px) {
-
+  .image-group { top: 100px; }
 }
 
 /* iPhone 6/7/8 - Horizontal */
