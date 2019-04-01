@@ -151,9 +151,10 @@ article {
   .content-group { display: block; }
   .main { width: 87%; margin-top: 10px; font-size: 1.025rem; }
   .mobile-margin-bottom { margin-bottom: 5px; }
-  .no-horizontal { display: initial; }
   .desktop-img { display: none; }
   .mobile-img { display: initial; }
+  .no-horizontal { display: initial; }
+  .horizontal { display: none; }
   img { width: 100vw; height: auto; margin-left: -10px; }
   .mobile-title { display: initial; }
   .desktop-title { display: none; }
