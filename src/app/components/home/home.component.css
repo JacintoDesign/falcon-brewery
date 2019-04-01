@@ -9,6 +9,16 @@
 }
 /* ---------- Home ------------ */
 
+.black-background {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  transition: .3s ease;
+}
+
 /* Video Background */
 #video-background {
   position: fixed;
