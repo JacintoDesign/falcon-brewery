@@ -2,20 +2,21 @@
   
   <article>
     <h1 class="page-title">Our Beer</h1>
-    <h1 class="page-title right" (click)="showCard9()">Where On Tap</h1>
+    <h1 class="right" (click)="showCard9()">Where On Tap</h1>
     <section>
       <div class="content-group">
         <div class="shape"></div>
         <!-- Beer Titles -->
         <div class="beer-list show-desktop">
           <h1 class="beer-title" (click)="showCard1()">Red Falcon Ale</h1>
-          <h1 class="beer-title" (click)="showCard2()">Laggar Falcon Craft Lager</h1>
+          <h1 class="beer-title" (click)="showCard2()">Falcon Craft Lager</h1>
           <h1 class="beer-title" (click)="showCard3()">Bomb Girls Blond Ale</h1>
           <h1 class="beer-title" (click)="showCard4()">Munition IPA</h1>
           <h1 class="beer-title" (click)="showCard5()">Kent's Best Bitter</h1>
           <h1 class="beer-title" (click)="showCard6()">Salem Stout</h1>
           <h1 class="beer-title" (click)="showCard7()">Ginger Haze</h1>
           <h1 class="beer-title" (click)="showCard8()">Light Cruiser English Mild</h1>
+          <h1 class="beer-title red horizontal" (click)="showCard9()">Where On Tap</h1>
         </div>
         <!-- Beer Titles - Mobile -->
         <div class="beer-list-mobile show-mobile" (click)="toggleBeerList()">
@@ -24,7 +25,8 @@
         </div>
         <div class="beer-list show-mobile beer-list-hide" id="mobile-beer-menu">
           <h1 class="beer-title" (click)="showCard1()">Red Falcon Ale</h1>
-          <h1 class="beer-title" (click)="showCard2()">Laggar Falcon Craft Lager</h1>
+          <h1 class="beer-title" (click)="showCard2()">Falcon Craft Lager</h1>
+          <h1 class="beer-title" (click)="showCard2()">Falcon Craft Lager</h1>
           <h1 class="beer-title" (click)="showCard3()">Bomb Girls Blond Ale</h1>
           <h1 class="beer-title" (click)="showCard4()">Munition IPA</h1>
           <h1 class="beer-title" (click)="showCard5()">Kent's Best Bitter</h1>
@@ -34,7 +36,7 @@
           <h1 class="beer-title red" (click)="showCard9()">Where on Tap</h1>
         </div>
         <!-- Falcon Ale -->
-        <div class="image-group" id="card-1">
+        <div class="image-group no-show" id="card-1">
           <div class="beer-image">
             <img src="../../../assets/img/labels/falcon-ale.jpg" alt="Red Falcon Ale">
           </div>
@@ -178,7 +180,7 @@
           </div>
         </div>
         <!-- Where on Tap -->
-        <div class="image-group no-show" id="card-9">
+        <div class="image-group new-top" id="card-9">
           <div>
             <img class="image" src="../../../assets/img/falcon-brewing-42.jpg" alt="Kegs of Falcon Beer">
           </div>

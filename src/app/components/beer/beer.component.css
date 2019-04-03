@@ -167,6 +167,8 @@ article {
   color: #BF1E2E;
 }
 
+.horizontal { display: none; }
+
 /* ---------- Media Queries ------------ */
 
 /* Monitor - No Bookmarks Bar */
@@ -253,14 +255,99 @@ article {
 }
 
 /* iPad - Horizontal */
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 900px) and (max-width: 1025px) {
   section { margin-top: 30px; }
-  h1 { top: 1px; left: 80px; }
+  .mobile-title { display: initial; }
+  .desktop-title { display: none; }
+  img { height: 48vh; }
+  .beer-info { display: flex; justify-content: center; margin-top: -5px; }
+  .beer-list { position: absolute; top: 120px; left: 15px; display: flex; flex-direction: column; }
+  .beer-title { width: 67%; position: relative; left: unset; padding: 15px; font-size: 1.1rem; }
+  .show-desktop { display: initial; }
+  .show-mobile { display: none; }
+  .main { font-size: 1.05rem; padding: 25px; }
+  .right { position: absolute; right: 25px; top: 35px; }
+  article { 
+    margin: 0; 
+    padding: 10px; 
+    border: 0px solid rgba(255, 255, 255, 0.85); 
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .page-title { 
+    top: -30px; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0px;   
+    background-color: rgba(233, 12, 34, 0.85);
+    padding: 10px 10px 5.1px 60px;
+    position: fixed;
+    width: 100%;
+  }
+  .image-group { 
+    flex-direction: column;
+    margin-left: 450px; 
+    position: absolute;
+    top: 110px;
+    padding-right: 10px;
+    z-index: -1;
+  }
+  .image { width: 38vw; }
+  .main-width { width: 33vw; margin-top: 10px; }
+  .main-column-1 { padding-bottom: 50px; padding-left: 40px; width: 244.5%; margin-left: -46.5px; }
+  .main-column-2 { padding-right: 33px; }
+  .new-top { top: 110px; }
+  .shape { top: 165px; right: 85px; width: 555px; height: 465px; }
+  .horizontal { display: none; }
+  .tap-info { margin-top: -12px; }
 }
 
 /* iPad */
 @media screen and (max-width: 769px) {
-
+  section { margin-top: 30px; }
+  .mobile-title { display: initial; }
+  .desktop-title { display: none; }
+  img { height: 35vh; }
+  .beer-info { display: flex; justify-content: center; margin-top: -5px; }
+  .beer-list { position: absolute; top: 120px; left: 15px; display: flex; flex-direction: column; }
+  .beer-title { width: 67%; position: relative; left: unset; padding: 15px; font-size: 1.1rem; }
+  .show-desktop { display: initial; }
+  .show-mobile { display: none; }
+  .main { font-size: 1.05rem; padding: 25px; }
+  .right { position: absolute; right: 25px; top: 35px; }
+  article { 
+    margin: 0; 
+    padding: 10px; 
+    border: 0px solid rgba(255, 255, 255, 0.85); 
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .page-title { 
+    top: -30px; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0px;   
+    background-color: rgba(233, 12, 34, 0.85);
+    padding: 10px 10px 5.1px 60px;
+    position: fixed;
+    width: 100%;
+  }
+  .image-group { 
+    flex-direction: column;
+    margin-left: 358px; 
+    position: absolute;
+    top: 110px;
+    padding-right: 10px;
+    z-index: -1;
+  }
+  .image { width: 46.5vw; }
+  .main-width { width: 42.75vw; margin-top: 10px; }
+  .main-column-1 { padding-bottom: 53px; width: 235%; margin-left: -32.5px; }
+  .main-column-2 { padding-right: 33px; }
+  .new-top { top: 110px; }
+  .shape { top: 165px; right: 85px; width: 400px; height: 770px; }
+  .horizontal { display: none; }
+  .tap-info { margin-top: -12px; }
 }
 
 /* Galaxy */
@@ -270,10 +357,10 @@ article {
   .page-title { top: -30px; position: fixed; z-index: 10; }
   img { width: 95%; height: auto; }
   .image { width: 95%; }
-  .main { margin-top: 5px; font-size: 1rem; margin-bottom: 10px; padding: 25px; }
+  .main { margin-top: 7px; font-size: 1rem; margin-bottom: 10px; padding: 25px; }
   .main-width { width: auto; }
-  .main-column-1 { width: 85%; position: absolute; left: 0; padding-bottom: 52px; margin-bottom: 10px; }
-  .main-column-2 { width: 36%; position: absolute; }
+  .main-column-1 { margin-left: unset; width: 85.25%; position: absolute; left: 0; padding-bottom: 52px; margin-bottom: 10px; }
+  .main-column-2 { width: 36%; position: absolute; padding: 25px; }
   .right { display: none; }
   .show-desktop { display: none; }
   .show-mobile { display: initial; }
@@ -288,7 +375,6 @@ article {
     padding: 12px 15px; 
   }
   h1 { 
-    top: -30px; 
     left: 0px;   
     background-color: rgba(233, 12, 34, 0.85);
     padding: 10px 10px 5.1px 60px;
@@ -326,30 +412,103 @@ article {
     margin-right: -30px;
     font-size: 2rem; 
   }
-
+  .tap-info { margin-top: -5px; }
 }
 
+/* Pixel 2XL */
 @media screen and (max-width: 600px) and (max-height: 839px) {
   article { min-height: 100vh; }
+  .main-column-1 { width: 85%; }
 }
 
 /* Galaxy - Horizontal */
 @media screen and (max-width: 850px) and (max-height: 500px) {
+  .mobile-title { display: initial; }
+  .desktop-title { display: none; }
+  h1 { 
+    left: 0px;   
+    background-color: rgba(233, 12, 34, 0.85);
+    padding: 10px 10px 5.1px 60px;
+    position: fixed;
+    width: 100%;
+  }
+  article { 
+    margin: 0; 
+    padding: 10px; 
+    border: 0px solid rgba(255, 255, 255, 0.85); 
+    min-height: 100vh;
+    height: fit-content;
+  }
+  img { height: 86vh; }
+  section { margin-top: 50px; }
+  .main { width: 62.5%; font-size: 1rem; padding: 25px; }
+  .shape { right: 39px; height: 540px; top: 161px; width: 520px; border-style: dashed; }
+  .beer-info { display: flex; justify-content: center; margin-top: -15px; }
+  .beer-list { position: absolute; top: 50px; left: 15px; display: flex; flex-direction: column; }
+  .beer-title { width: 67%; position: relative; left: unset; padding: 15px; font-size: 1.1rem; }
+  .page-title { top: -30px; position: fixed; z-index: 10; }
+  .show-desktop { display: initial; }
+  .show-mobile { display: none; }
+  .image-group { 
+    flex-direction: column; 
+    margin-left: 300px; 
+    position: absolute;
+    top: 67px;
+    padding-right: 10px;
+    z-index: -1;
+  }
+  .right { display: none; }
+  .horizontal { display: flex; }
+  .image { width: 45vw; }
+  .new-top { margin-left: 350px; }
+  .main-column-1 { padding-bottom: 53px; padding-left: 40px; width: 215%; margin-left: -26.5px; }
+  .main-column-2 { padding-right: 33px; padding-left: 40px; }
+  .tap-info { margin-top: -15px; }
+}
 
+/* Pixel 2XL - Horizontal */
+@media screen and (max-width: 825px) and (max-height: 500px) {
+  .main { width: 64.25%; font-size: 1rem; }
+  .main-column-1 { padding-bottom: 56px; width: 200%; margin-left: -19px; }
+  .shape { right: 36px; }
+}
+
+/* iPhone X - Horizontal*/
+@media screen and (max-width: 815px) and (max-height: 376px) {
+  .main { width: 65%; }
+  .main-column-1 { margin-left: -12.75px; width: 189%; }
+  .main-column-2 { width: 68%; }
+  img { height: 93.5vh; }
+  .shape { height: 530px; top: 100px; }
 }
 
 /* iPhone X */
 @media screen and (max-width: 376px) {
   .main-column-1 { width: 84%; margin-bottom: 10px; }
   .main-column-2 { width: 34%; }
+  .main { font-size: 1rem; }
 }
 
 /* iPhone 6/7/8 */
 @media screen and (max-width: 376px) and (max-height: 668px) {
-
 }
 
 /* iPhone 6/7/8 - Horizontal */
 @media screen and (max-width: 668px) and (max-height: 376px) {
-
+  .beer-title { width: 64%; font-size: 1.05rem; }
+  .beer-info { margin-top: -5px; }
+  .main { font-size: 1rem; width: 82.25%; }
+  .main-column-1 {     
+    margin-left: 3px;
+    width: 167.5%;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 120px; 
+  }
+  .main-column-2 { width: 53%; padding-left: 20px; }
+  .shape { right: 0; top: 192px; height: 524px; width: 502px; }
+  .new-top { margin-left: 308px; }
+  img { height: 84vh; }
+  .image { width: 47vw; }
+  .tap-info { margin-top: -10px; }
 }
