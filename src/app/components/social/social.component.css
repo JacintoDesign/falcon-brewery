@@ -374,15 +374,123 @@ article {
 }
 
 /* iPad - Horizontal */
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 900px) and (max-width: 1025px) {
   section { margin-top: 30px; }
-  h1 { top: 1px; left: 80px; }
-  img { width: 100%; height: auto; }
+  img { height: 68.5vh; }
+  article { 
+    margin: 0; 
+    padding: 10px; 
+    border: 0px solid rgba(255, 255, 255, 0.85); 
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .page-title { 
+    top: -30px; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0px;   
+    background-color: rgba(233, 12, 34, 0.85);
+    padding: 10px 10px 5.1px 60px;
+    position: fixed;
+    width: 100%;
+  }
+  .image-group { 
+    flex-direction: column;
+    margin-left: 450px; 
+    position: absolute;
+    top: 110px;
+    padding-right: 10px;
+    z-index: -1;
+  }
+  .beer-list {
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    margin-top: 10px; 
+  }
+  .beer-title {
+    margin-right: 10px; 
+  }
+  .show-mobile { display: none; }
+  .menu-group { margin-left: -450px; margin-top: 30px; }
+  .menu { font-size: .9rem; }
+  .main-width { width: 89.5vw; }
+  .main-width-3 { width: 42.72vw }
+  .shape-1 { display: none; }
+  .shape-6 { top: 390px; width: 500px; height: 223px; right: 75px; }
+  .image-group-2 { position: absolute; top: 240px; left: 100px; margin-left: 345px; }
+  .beer-cans img { height: 79vh; }
+  .beer-cans { margin-left: -247px; margin-top: -91px; }
+  .image-grid { margin-left: -449px; margin-top: 45px;  }
+  .grid-img { height: 30vh; }
+  .main-width-2 { width: 20vw; margin-left: 0px; padding-left: 20px; }
+  .shape-5 { height: 390px; width: 600px; }
+  .tap-group { margin-left: 0px; margin-top: 45px; flex-direction: row; }
+  .shape-2 { display: none; }
+  .shape-3 { height: 372px; top: 50px; width: 500px; }
+  .shape-4 { display: none; }
+  .can-font { width: 26vw; }
+  .bottle-group { flex-direction: row; }
+  .tap-width { width: 21.5vw; }
 }
 
 /* iPad */
 @media screen and (max-width: 769px) {
-
+  .show-desktop { display: initial; }
+  img { height: 52.5vh; }
+  article { 
+    margin: 0; 
+    padding: 10px; 
+    border: 0px solid rgba(255, 255, 255, 0.85); 
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .page-title { 
+    top: -30px; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0px;   
+    background-color: rgba(233, 12, 34, 0.85);
+    padding: 10px 10px 5.1px 60px;
+    position: fixed;
+    width: 100%;
+  }
+  .image-group { 
+    flex-direction: column;
+    margin-left: 450px; 
+    position: absolute;
+    top: 110px;
+    padding-right: 10px;
+    z-index: -1;
+  }
+  .beer-list {
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    margin-top: -10px; 
+  }
+  .beer-title {
+    margin-right: 10px; 
+  }
+  .show-mobile { display: none; }
+  .menu-group { margin-left: -450px; margin-top: 30px; }
+  .menu { font-size: .9rem; }
+  .main-width { width: 89.5vw; }
+  .main-width-3 { width: 40.25vw; }
+  .shape-1 { display: none; }
+  .shape-6 { top: 390px; width: 500px; height: 400px; right: 75px; }
+  .image-group-2 { position: absolute; top: 240px; left: 100px; margin-left: 345px; }
+  .beer-cans img { height: 59vh; }
+  .beer-cans { margin-left: -404px; }
+  .image-grid { margin-left: -449px; margin-top: 45px;  }
+  .grid-img { height: 22.86vh; }
+  .main-width-2 { width: 90vw; margin-left: -453px; padding-left: 20px; }
+  .shape-5 { height: 642px; }
+  .tap-group { margin-left: 0px; margin-top: 45px; }
+  .shape-2 { display: none; }
+  .shape-3 { height: 490px; }
+  .shape-4 { display: none; }
+  .can-font { width: 23vw; }
 }
 
 /* Galaxy */
@@ -466,7 +574,63 @@ article {
 
 /* Galaxy - Horizontal */
 @media screen and (max-width: 850px) and (max-height: 500px) {
+  .shape-1 { display: none; }
+  .shape-2 { right: 32px; top: 41px; width: 555px; }
+  .shape-3 { display: none; }
+  .shape-4 { display: none; }
+  .shape-5 { height: 403px; right: -22px; top: 41px; width: 555px; }
+  .shape-6 { display: none; }
+  h1 { 
+    left: 0px;   
+    background-color: rgba(233, 12, 34, 0.85);
+    padding: 10px 10px 5.1px 60px;
+    position: fixed;
+    width: 100%;
+  }
+  article { 
+    margin: 0; 
+    padding: 10px; 
+    border: 0px solid rgba(255, 255, 255, 0.85); 
+    min-height: 100vh;
+    height: fit-content;
+  }
+  img { height: 86vh; width: auto; }
+  .image-group { 
+    flex-direction: column; 
+    margin-left: 200px; 
+    position: absolute;
+    top: 67px;
+    padding-right: 10px;
+    z-index: -1;
+  }
+  .image-group-2 { margin-left: 334px; margin-top: 10vh; }
 
+  .bottle-group { margin-left: 265px; }
+  .main { width: 72%; font-size: 1rem; padding: 25px; }
+  .main-width-2 { width: 67%; padding: 25px 97px; margin-left: -20px; margin-top: 20px; }
+  .page-title { top: -30px; position: fixed; z-index: 10; }
+  .beer-info { display: flex; justify-content: center; margin-top: -15px; }
+  .beer-list { position: absolute; top: 50px; left: 15px; display: flex; flex-direction: column; }
+  .beer-title { width: 67%; position: relative; left: unset; padding: 15px; font-size: 1.1rem; margin-bottom: 0; }
+  .in-stores { margin-top: 0; }
+  .main-width-3 { width: 78%; font-size: .9rem; margin-left: 55px; }
+  .width-4 { width: 80.5%; margin-left: 35px; }
+  .menu-group { display: initial; flex-direction: unset; }
+}
+
+/* Pixel 2XL - Horizontal */
+@media screen and (max-width: 825px) and (max-height: 500px) {
+  .shape-5 { right: -10px; }
+  .main-width-2 { padding: 25px 94px; }
+  img { height: 85vh; }
+}
+
+/* iPhone X - Horizontal*/
+@media screen and (max-width: 815px) and (max-height: 376px) {
+  .shape-5 { right: -7px; }
+  img { height: 91.25vh; }
+  .main-width-2 { padding: 25px 90px; }
+  .grid-img { height: 42vh; }
 }
 
 /* iPhone 6/7/8 */
@@ -476,5 +640,16 @@ article {
 
 /* iPhone 6/7/8 - Horizontal */
 @media screen and (max-width: 668px) and (max-height: 376px) {
-
+  img { height: 81vh; }
+  .image { margin-left: -34px; }
+  .tap-width { width: 84%; margin-left: -33px; }
+  .grid-img { height: 35vh; }
+  .image-grid { margin-left: -71px; }
+  .main-width-2 { padding: 25px 50px; width: 96%; margin-left: -72px; }
+  .shape-5 { height: 367px; }
+  .shape-2 { right: 17px; }
+  .menu-group { margin-left: -56px; }
+  .image-group-2 { margin-top: 15vh; }
+  .can-font { font-size: .9rem; }
+  .can-title { font-size: 1rem; }
 }
