@@ -81,6 +81,10 @@ a {
     padding: 0;
     background-color: rgba(0,0,0,0);
   }
+  .nav a:active {
+    padding: 0;
+    color: black;
+  }
   .no-margin-left-list { margin-left: 10px !important; padding-top: 15px !important; }
 
   /* Hamburger Menu */
@@ -124,6 +128,8 @@ a {
 /* Galaxy */
 @media screen and (max-width: 600px) {
   .nav-items li { width: 96.25%; }
+  .nav { position: fixed; z-index: 20; }
+  .nav-expand { top: 50px !important; }
 }
 
 /* Galaxy - Horizontal */

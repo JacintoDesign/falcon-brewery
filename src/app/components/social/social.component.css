@@ -499,7 +499,7 @@ article {
   .content-group { display: block; }
   .main { margin-top: 5px; font-size: 1rem; margin-bottom: 10px; padding: 25px; }
   .main-width { width: auto; }
-  .main-width-2 { width: auto; margin-bottom: 20px; }
+  .main-width-2 { width: 95.5%; margin-bottom: 15px; margin-left: -17px; margin-top: 8px; }
   .main-width-3 { width: auto; }
   .mobile-margin-bottom { margin-bottom: 0; }
   .desktop-img { display: none; }
@@ -510,6 +510,7 @@ article {
   .grid-img { height: auto; width: 97%; }
   .row { flex-direction: column; }
   .shape-1 { display: none; }
+  .shape-2 { display: initial; }
   .shape-3 { display: none; }
   .shape-4 { display: none; }
   .shape-5 { display: none; }
@@ -561,14 +562,20 @@ article {
     flex-direction: column; 
     margin-left: 0; 
     position: absolute;
-    top: 125px;
+    top: 80px;
     padding-right: 10px;
     z-index: -1;
   }
-  .image-group-2 { flex-direction: column; margin-left: unset; }
-  .beer-cans { margin-left: unset; margin-top: -170px; }
-  .bottle-group { top: 117.5px; }
-  .menu-group { margin-left: unset; flex-direction: column; }
+  .image-group-2 { 
+    flex-direction: column; 
+    margin-left: unset;
+    position: relative;
+    top: unset;
+    left: unset;
+   }
+  .beer-cans { margin-left: unset; margin-top: -170px; z-index: -1; }
+  .beer-cans img { height: auto; }
+  .menu-group { margin-left: unset; flex-direction: column; margin-top: 40px; }
   .menu-2 { margin-left: unset; }
 }
 
