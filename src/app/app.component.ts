@@ -7,15 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'falcon-brewery-pwa';
-
-  Toggle() {
-    if (window.innerWidth < 600) {
-      var x = document.getElementById("nav");
-      var y = document.getElementById("menu-bars");
-      x.classList.toggle("nav-expand");
-      y.classList.toggle("change");
-    }
-  }
 }
 
 

@@ -10,13 +10,17 @@
 /* ---------- Home ------------ */
 
 .black-background {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.85);
   height: 50px;
   width: 100%;
   position: absolute;
   top: 0; 
   left: 0;
   transition: .3s ease;
+}
+
+.display-none {
+  display: none;
 }
 
 /* Video Background */
@@ -111,8 +115,8 @@ article {
     margin: 0; 
     padding: 10px; 
     border: 0px solid rgba(255, 255, 255, 0.85); 
-    min-height: 100vh;
-    height: fit-content;
+    max-height: 100vh;
+    overflow-y: hidden;
   }
   /* Falcon Logo */
   .logo { margin-top: -10vh; }
@@ -136,8 +140,8 @@ article {
     margin: 0; 
     padding: 10px; 
     border: 0px solid rgba(255, 255, 255, 0.85); 
-    min-height: 100vh;
-    height: fit-content;
+    max-height: 100vh;
+    overflow-y: hidden;
   }
   /* Falcon Logo */
   .logo { margin-top: 35vh; }
