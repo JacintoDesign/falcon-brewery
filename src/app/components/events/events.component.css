@@ -370,17 +370,112 @@ article {
 }
 
 /* iPad - Horizontal */
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 900px) and (max-width: 1025px) {
   section { margin-top: 30px; }
-  h1 { top: 1px; left: 80px; }
-  img { width: 100%; height: auto; }
   .img-container .grid-img { opacity: 0.8; }
   .img-container .img-middle { opacity: 1; }
+  img { height: 84.65vh; }
+  article { 
+    margin: 0; 
+    padding: 10px; 
+    border: 0px solid rgba(255, 255, 255, 0.85); 
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .page-title { 
+    top: -30px; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0px;   
+    background-color: rgba(233, 12, 34, 0.85);
+    padding: 10px 10px 5.1px 60px;
+    position: fixed;
+    width: 100%;
+  }
+  .image-group { 
+    flex-direction: column;
+    margin-left: 450px; 
+    position: absolute;
+    top: 110px;
+    padding-right: 10px;
+    z-index: -1;
+  }
+  .beer-list {
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    margin-top: 10px; 
+  }
+  .beer-title {
+    margin-right: 10px; 
+  }
+  .beer-info { margin-left: -450px; }
+  .show-mobile { display: none; }
+  .menu-group { margin-left: -450px; margin-top: 30px; }
+  .menu { font-size: .9rem; }
+  .main-width { width: 91.75vw; }
+  .half-image-group { width: 95vw; }
+  .image-grid { margin-left: -449px; margin-top: 0;  }
+  .grid-img { height: 41.75vh; }
+  .news-image-group { margin-left: 0; }
+  .shape { height: 800px; }
+  .news-info { margin-left: 0; }
+  .contest-events { margin-left: -450px; margin-top: -7px; }
+  .contest-image { margin-left: -450px; }
 }
 
 /* iPad */
-@media screen and (max-width: 769px) {
-
+@media screen and (max-width: 769px) and (min-width: 601px) {
+  .show-desktop { display: initial; }
+  .img-container .grid-img { opacity: 0.8; }
+  .img-container .img-middle { opacity: 1; }
+  img { height: 46.75vh; }
+  article { 
+    margin: 0; 
+    padding: 10px; 
+    border: 0px solid rgba(255, 255, 255, 0.85); 
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .page-title { 
+    top: -30px; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0px;   
+    background-color: rgba(233, 12, 34, 0.85);
+    padding: 10px 10px 5.1px 60px;
+    position: fixed;
+    width: 100%;
+  }
+  .image-group { 
+    flex-direction: column;
+    margin-left: 450px; 
+    position: absolute;
+    top: 100px;
+    padding-right: 10px;
+    z-index: -1;
+  }
+  .beer-list {
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    margin-top: -10px; 
+  }
+  .beer-title {
+    margin-right: 10px; 
+  }
+  .show-mobile { display: none; }
+  .menu-group { margin-left: -450px; margin-top: 30px; }
+  .menu { font-size: .9rem; }
+  .main-width { width: 89.5vw; }
+  .beer-info { margin-left: -449.5px; }
+  .image-grid { margin-left: -449px; margin-top: 0;  }
+  .grid-img { height: 23vh; }
+  .news-image-group { margin-left: 0; }
+  .news-info { margin-left: 0; }
+  .contest-events { margin-left: -450px; margin-top: -7px; }
+  .contest-image { margin-left: -450px; }
+  .half-image-group { width: 93.5vw; }
 }
 
 /* Galaxy */

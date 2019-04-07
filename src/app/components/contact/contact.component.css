@@ -270,6 +270,8 @@ article {
     min-height: 100vh;
     height: fit-content;
   }
+  .mobile-text { display: initial; }
+  .desktop-text { display: none; }
 }
 
 /* iPad */
@@ -317,6 +319,8 @@ article {
   .mobile-margin-bottom { margin-bottom: 0; }
   .desktop-img { display: none; }
   .mobile-img { display: initial; }
+  /* .mobile-text { display: initial; }
+  .desktop-text { display: none; } */
   img { width: 100%; height: auto; }
   .page-title { top: -30px; position: fixed; z-index: 10; }
   h1 { 
