@@ -487,6 +487,11 @@ article {
   .main-column-1 { width: 84%; margin-bottom: 10px; }
   .main-column-2 { width: 34%; }
   .main { font-size: 1rem; }
+  .beer-title { width: 91.2%; }
+  img { width: 94%; }
+  .image { width: 94%; }
+  .main-width { width: 81vw; }
+  .main-column-1 { width: 83%; }
 }
 
 /* iPhone 6/7/8 */

@@ -129,7 +129,8 @@ a {
 @media screen and (max-width: 600px) {
   .nav-items li { width: 96.25%; }
   .nav { position: fixed; z-index: 20; }
-  .nav-expand { top: 50px !important; }
+  .nav-expand { top: 49px !important; }
+  .beer-info { margin: auto 15px; }
 }
 
 /* Galaxy - Horizontal */

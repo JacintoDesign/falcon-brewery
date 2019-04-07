@@ -376,9 +376,9 @@ article {
     margin-bottom: 15px;
   }
   .shape {
-    top: 1085px;
+    top: 1135px;
     right: 55px;
-    height: 540px;
+    height: 500px;
     width: 180px;
     margin-bottom: 15px;
   }
@@ -431,7 +431,7 @@ article {
 
 /* iPhone X */
 @media screen and (max-width: 376px) {
-  .shape { top: 1175px; }
+  .shape { top: 1175px; height: 540px; }
 }
 
 /* iPhone X - Horizontal */

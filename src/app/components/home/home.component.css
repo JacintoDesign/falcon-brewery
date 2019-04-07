@@ -146,7 +146,7 @@ article {
 /* Galaxy */
 @media screen and (max-width: 600px) {
   /* Falcon Logo */
-  .logo { margin-top: 5vh; }
+  .logo { margin-top: 37vh; }
   .falcon-logo { width: 90%; }
   .falcon-text { width: 90%; margin-top: 2%; }
   article { margin: 0px; padding: 15px; border-width: 0px; }
@@ -182,9 +182,13 @@ article {
   .logo { margin-top: -170px; }
 }
 
+/* iPhone X */
+@media screen and (max-width: 376px) {
+}
+
 /* iPhone 6/7/8 */
 @media screen and (max-width: 376px) and (max-height: 668px) {
-  .logo { margin-top: 0vh; }
+  .logo { margin-top: 35vh; }
 }
 
 /* iPhone 6/7/8 - Horizontal */
