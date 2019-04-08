@@ -584,9 +584,9 @@ article {
   .shape-1 { display: none; }
   .shape-2 { right: 32px; top: 41px; width: 555px; }
   .shape-3 { display: none; }
-  .shape-4 { display: none; }
-  .shape-5 { height: 403px; right: -22px; top: 41px; width: 555px; }
-  .shape-6 { display: none; }
+  .shape-4 { height: 345px; right: 46px; top: 83px; width: 560px; left: unset; }
+  .shape-5 { height: 403px; right: -25px; top: 41px; width: 600px; }
+  .shape-6 { height: 403px; right: 20px; top: 41px; width: 590px; }
   h1 { 
     left: 0px;   
     background-color: rgba(233, 12, 34, 0.85);
@@ -601,7 +601,7 @@ article {
     min-height: 100vh;
     height: fit-content;
   }
-  img { height: 86vh; width: auto; }
+  img { height: 92vh; width: auto; }
   .image-group { 
     flex-direction: column; 
     margin-left: 200px; 
@@ -611,7 +611,7 @@ article {
     z-index: -1;
   }
   .image-group-2 { margin-left: 334px; margin-top: 10vh; }
-
+  .grid-img { height: 42.5vh; }
   .bottle-group { margin-left: 265px; }
   .main { width: 72%; font-size: 1rem; padding: 25px; }
   .main-width-2 { width: 67%; padding: 25px 97px; margin-left: -20px; margin-top: 20px; }

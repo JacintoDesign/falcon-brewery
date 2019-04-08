@@ -439,10 +439,10 @@ article {
     min-height: 100vh;
     height: fit-content;
   }
-  img { height: 86vh; }
+  img { height: 92vh; }
   section { margin-top: 50px; }
   .main { width: 62.5%; font-size: 1rem; padding: 25px; }
-  .shape { right: 39px; height: 540px; top: 161px; width: 520px; border-style: dashed; }
+  .shape { right: 39px; height: 540px; top: 161px; width: 530px; border-style: dashed; }
   .beer-info { display: flex; justify-content: center; margin-top: -15px; }
   .beer-list { position: absolute; top: 50px; left: 15px; display: flex; flex-direction: column; }
   .beer-title { width: 67%; position: relative; left: unset; padding: 15px; font-size: 1.1rem; }
@@ -463,7 +463,7 @@ article {
   .new-top { margin-left: 350px; }
   .main-column-1 { padding-bottom: 53px; padding-left: 40px; width: 215%; margin-left: -26.5px; }
   .main-column-2 { padding-right: 33px; padding-left: 40px; }
-  .tap-info { margin-top: -15px; }
+  .tap-info { margin-top: -15px; margin-left: -4px; }
 }
 
 /* Pixel 2XL - Horizontal */
