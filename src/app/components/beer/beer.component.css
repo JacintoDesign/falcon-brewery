@@ -254,6 +254,31 @@ article {
   .beer-list { margin-top: 3.5vh; width: 360px;}
 }
 
+/* Laptop - 1366 x 768 - Bookmarks Bar */
+@media screen and (width: 1366px) {
+  .right { position: absolute; top: -6px; }
+  .beer-list { margin-top: -3.5vh; }
+  .beer-title { margin-bottom: -10px; }
+  .shape { top: 69px; right: 190px; width: 480px; height: 475px; }
+  #cruiser { padding: 30px 25px; }
+  .image { width: 25vw; }
+  .new-top { margin-top: -2vh; }
+}
+
+/* Laptop - 1366 x 768 - No Bookmarks Bar */
+@media screen and (width: 1366px) and (min-height: 720px) {
+  .beer-list { margin-top: -1vh; }
+  .shape { height: 493px; }
+  .new-top { margin-top: 1vh; }
+}
+
+/* Laptop - 1366 x 768 - Fullscreen */
+@media screen and (width: 1366px) and (min-height: 759px) {
+  img { height: 67vh; }
+  .beer-list { margin-top: 1vh; }
+  .shape { top: 78px; height: 554px; }
+}
+
 /* iPad - Horizontal */
 @media screen and (min-width: 900px) and (max-width: 1025px) {
   section { margin-top: 30px; }

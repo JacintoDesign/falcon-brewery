@@ -115,6 +115,24 @@ article {
   .content-group { margin-top: 60px; }
 }
 
+/* Laptop - 1366 x 768 - Bookmarks Bar */
+@media screen and (width: 1366px) {
+  .main { font-size: .895rem; }
+  .image { border: none; }
+  .content-group { margin-top: -15px; }
+}
+
+/* Laptop - 1366 x 768 - No Bookmarks Bar */
+@media screen and (width: 1366px) and (min-height: 720px) {
+  .content-group { margin-top: -12px; }
+  .main { font-size: .92rem; }
+}
+
+/* Laptop - 1366 x 768 - Fullscreen */
+@media screen and (width: 1366px) and (min-height: 759px) {
+  .main { font-size: 1.05rem; }
+}
+
 /* iPad - Horizontal */
 @media screen and (max-width: 1025px) {
   section { margin-top: 65px; }

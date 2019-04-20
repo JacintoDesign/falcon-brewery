@@ -245,6 +245,28 @@ article {
   }
 }
 
+/* Laptop - 1366 x 768 - Bookmarks Bar */
+@media screen and (width: 1366px) {
+  .iframe-container { width: 443px; height: 246px; }
+  .google-logo { width: 150px; height: 150px; }
+  .shape { height: 450px; }
+  .main { padding: 10px 25px; }
+  .main-width { width: 16vw; }
+}
+
+/* Laptop - 1366 x 768 - No Bookmarks Bar */
+@media screen and (width: 1366px) and (min-height: 720px) {
+  .iframe-container { height: 279px; }
+}
+
+/* Laptop - 1366 x 768 - Fullscreen */
+@media screen and (width: 1366px) and (min-height: 759px) {
+  .iframe-container { height: 359px; }
+  .main { padding: 25px; }
+  .title-container { padding: 10px 25px; }
+  .shape { height: 610px; }
+}
+
 /* iPad - Horizontal */
 @media screen and (min-height: 500px) and (min-width: 900px) and (max-width: 1024px) {
   section { margin-top: 65px; }

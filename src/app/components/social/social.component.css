@@ -373,6 +373,46 @@ article {
   .shape-6 { top: 175px; }
 }
 
+/* Laptop - 1366 x 768 - Bookmarks Bar */
+@media screen and (width: 1366px) {
+  .image { height: 74vh; }
+  .grid-img { height: 36vh; }
+  .tap-group { margin-top: 5px; }
+  .beer-cans { margin-top: 0; }
+  .menu-group { margin-top: -10px; margin-left: -10px; }
+  .menu { font-size: .839rem; }
+  .can-font { width: 20vw; }
+  .shape-1 { top: 101px; height: 410px; }
+  .shape-2 { display: none; }
+  .shape-3 { display: none; }
+  .shape-4 { height: 443px; }
+  .shape-5 { top: 128px; }
+  .shape-6 { height: 424px; width: 220px; right: 175px; }
+}
+
+/* Laptop - 1366 x 768 - No Bookmarks Bar */
+@media screen and (width: 1366px) and (min-height: 720px) {
+  .bottle-group { margin-left: 110px; }
+  .tap-group { margin-left: 100px; }
+  .shape-5 { height: 371px; }
+  .shape-6 { height: 459px; }
+  .menu { font-size: .87rem; }
+}
+
+/* Laptop - 1366 x 768 - Fullscreen */
+@media screen and (width: 1366px) and (min-height: 759px) {
+  .image { height: 65vh; }
+  .grid-img { height: 31vh; }
+  .bottle-group { margin-top: 65px; }
+  .tap-group { margin-top: 65px; }
+  .beer-cans { margin-left: -185px; }
+  .menu { font-size: 1rem; }
+  .shape-1 { top: 100px; height: 580px; }
+  .shape-4 { top: 159px; left: 349px; }
+  .shape-5 { top: 199px; }
+  .shape-6 { height: 551px; right: 202px; }
+}
+
 /* iPad - Horizontal */
 @media screen and (min-width: 900px) and (max-width: 1025px) {
   section { margin-top: 30px; }
