@@ -590,9 +590,12 @@ article {
     width: 66%; 
     background-color: rgba(0,0,0,.5);
     font-size: 1rem; 
+    padding: 16px;
   }
+  #social-night { width: 90%; }
+  #social-middle { left: 44%; }
   .img-text-pad { padding: 16px 26px; }
-  .img-middle { left: 43%; }
+  .img-middle { opacity: 1; left: 50%; }
   .img-middle-music { left: 46%; }
   .img-middle-music-2 { left: 50%; }
   .img-middle-music-3 { left: 45%; }
@@ -642,12 +645,13 @@ article {
   .beer-info { display: flex; justify-content: center; margin-top: -8px; }
   .beer-list { position: absolute; top: 50px; left: 15px; display: flex; flex-direction: column; }
   .beer-title { width: 67%; position: relative; left: unset; padding: 15px; font-size: 1.1rem; margin-bottom: 0; }
-
+  #social-night { width: 90%; }
+  #social-middle { left: 44%; }
   .half-image-group { width: 69.5vw; }
   .news-width { width: 66vw; }
-  .grid-img { height: 49.5vh; }
-  .img-text { width: 65%; }
-  .img-middle { left: 45%; font-size: .9rem; }
+  .grid-img { height: 46.5vh; }
+  .img-text { width: 110%; padding: 16px; }
+  .img-middle { left: 39%; opacity: 1; font-size: .9rem; }
   .img-middle-music-2 { left: 47%; }
   .img-middle-music-3 { left: 42%; }
 
