@@ -600,6 +600,7 @@ article {
   .img-middle-music-2 { left: 50%; }
   .img-middle-music-3 { left: 45%; }
   .main-music { width: 83vw; }
+  .half-image { width: 100%; }
   .half-image-group { width: 90.25vw; }
   .news-image-group { top: 90px; }
   .contest-events { margin-top: -5px; }
