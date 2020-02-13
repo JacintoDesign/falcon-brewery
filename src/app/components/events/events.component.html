@@ -6,10 +6,10 @@
       <div class="content-group">
         <!-- Beer Titles -->
         <div class="beer-list show-desktop">
-          <h1 class="beer-title" (click)="showCard1()">News</h1>
+          <!-- <h1 class="beer-title" (click)="showCard1()">News</h1> -->
           <h1 class="beer-title" (click)="showCard2()">Events</h1>
           <h1 class="beer-title" (click)="showCard3()">Live Music</h1>
-          <h1 class="beer-title" (click)="showCard4()">Contests</h1>
+          <!-- <h1 class="beer-title" (click)="showCard4()">Contests</h1> -->
         </div>
         <!-- Beer Titles - Mobile -->
         <div class="beer-list-mobile show-mobile" (click)="toggleBeerList()">
@@ -17,10 +17,10 @@
           <fa-icon [icon]="['fas', 'sort-down']" class="icon"></fa-icon>
         </div>
         <div class="beer-list show-mobile beer-list-hide" id="mobile-beer-menu">
-          <h1 class="beer-title" (click)="showCard1()">News</h1>
+          <!-- <h1 class="beer-title" (click)="showCard1()">News</h1> -->
           <h1 class="beer-title" (click)="showCard2()">Events</h1>
           <h1 class="beer-title" (click)="showCard3()">Live Music</h1>
-          <h1 class="beer-title" (click)="showCard4()">Contests</h1>
+          <!-- <h1 class="beer-title" (click)="showCard4()">Contests</h1> -->
         </div>
         <!-- News -->
         <div class="image-group news-image-group no-show" id="card-1">
@@ -53,7 +53,7 @@
           </div>
         </div>
         <!-- Events -->
-        <div class="image-group" id="card-2">
+        <div class="image-group no-show" id="card-2">
             <div class="image-grid">
                 <div class="row">
                   <div class="img-container">
@@ -108,26 +108,27 @@
             </p>
           </div>
         </div>
+
         <!-- Live Music -->
-        <div class="image-group no-show" id="card-3">
+        <div class="image-group" id="card-3">
           <div class="image-grid">
             <div class="row row-column">
               <div class="img-container">
                 <img src="../../../assets/img/drums.jpg" alt="Drums" class="grid-img">
                 <div class="img-middle img-middle-music-2">
-                  <div class="img-text img-text-pad"><strong>Jackson Fox</strong><br>Nov 29</div>
+                  <div class="img-text img-text-pad"><strong>Dezz Assante</strong><br>Feb 14</div>
                 </div>
               </div>
               <div class="img-container">
                 <img src="../../../assets/img/guitar.jpg" alt="Electric Guitar" class="grid-img">
                 <div class="img-middle img-middle-music">
-                  <div class="img-text img-text-pad"><strong>Flailing Shillelaghs</strong><br>Nov 30</div>
+                  <div class="img-text img-text-pad"><strong>Hunter Sheridan</strong><br>Feb 21</div>
                 </div>
               </div>
               <div class="img-container">
                 <img src="../../../assets/img/drums.jpg" alt="Drums" class="grid-img">
                 <div class="img-middle img-middle-music">
-                  <div class="img-text img-text-pad"><strong>St. Andrews</strong><br>Nov 30</div>
+                  <div class="img-text img-text-pad"><strong>Blackstock Magee</strong><br>Feb 28</div>
                 </div>
               </div>                 
             </div>
@@ -135,19 +136,19 @@
               <div class="img-container">
                 <img src="../../../assets/img/guitar.jpg" alt="Electric Guitar" class="grid-img">
                 <div class="img-middle img-middle-music-3">
-                  <div class="img-text img-text-pad"><strong>Geordy Craig</strong><br>Dec 6</div>
+                  <div class="img-text img-text-pad"><strong>OPEN MIC</strong><br>Sun Mar 1</div>
                 </div>
               </div>
               <div class="img-container">
                 <img src="../../../assets/img/drums.jpg" alt="Drums" class="grid-img">
                 <div class="img-middle img-middle-music">
-                  <div class="img-text img-text-pad"><strong>Open Mic</strong><br>Dec 8</div>
+                  <div class="img-text img-text-pad"><strong>Geordy Craig</strong><br>Mar 6</div>
                 </div>
               </div>
               <div class="img-container">
                 <img src="../../../assets/img/guitar.jpg" alt="Electric Guitar" class="grid-img">
                 <div class="img-middle img-middle-music">
-                  <div class="img-text img-text-pad"><strong>Kevin Kerr</strong><br>Dec 13</div>
+                  <div class="img-text img-text-pad"><strong>Ross Burant</strong><br>Mar 13</div>
                 </div>
               </div>
             </div>
@@ -156,19 +157,19 @@
           <div class="beer-info">
             <p class="main main-width main-music">
               <span class="beer-subtitle">
-                Live Music
+                Live Music Fridays!
               </span><br><br>
-              <span class="beer-caption">Jackson Fox</span><span class="float-right">Nov 29</span><br>
-              <span class="beer-caption">Flailing Shillelaghs</span><span class="float-right">Nov 30</span><br>
-              <span class="beer-caption">St. Andrews</span><span class="float-right">Nov 30</span><br>
-              <span class="beer-caption">Geordy Craig</span><span class="float-right">Dec 6</span><br>
-              <span class="beer-caption">Open Mic</span><span class="float-right">Dec 8</span><br>
-              <span class="beer-caption">Kevin Kerr</span><span class="float-right">Dec 13</span><br><br>
+              <span class="beer-caption">Dezz Assante</span><span class="float-right">Feb 14</span><br>
+              <span class="beer-caption">Hunter Sheridan</span><span class="float-right">Feb 21</span><br>
+              <span class="beer-caption">Blackstock Magee</span><span class="float-right">Feb 28</span><br>
+              <span class="beer-caption">OPEN MIC</span><span class="float-right">Sun Mar 1</span><br>
+              <span class="beer-caption">Geordy Craig</span><span class="float-right">Mar 6</span><br>
+              <span class="beer-caption">Ross Burant</span><span class="float-right">Mar 13</span><br><br>
               <span class="beer-subtitle">
                 Contact
               </span><br>
               <span class="beer-caption uppercase"><br>RUSS BLAKELY<br>Entertainment Director</span><br>
-              <span class="bold"><span class="underline"><a href="mailto:russblakely@rogers.com" target="_blank" rel="noopener">russblakely@rogers.com</a></span><br>905 903 3064</span>
+              <span class="bold"><a href="mailto:russblakely@rogers.com" target="_blank" rel="noopener">russblakely@rogers.com</a><br>905 903 3064</span>
             </p>
           </div>
         </div>

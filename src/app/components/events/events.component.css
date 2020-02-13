@@ -17,11 +17,11 @@ section {
 }
 
 a {
-  color: white;
+  color: #BF1E2E;
 }
 
 a:hover {
-  color: #BF1E2E;
+  color: rgb(151, 12, 26);
 }
 
 h1 {
